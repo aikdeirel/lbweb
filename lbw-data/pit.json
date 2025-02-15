@@ -10,7 +10,7 @@
     "tracks": [
       {
         "no": 1,
-        "source": "/noise/pit/wbo.mp3"
+        "source": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/pit/wbo.mp3"
       }
     ]
   }
