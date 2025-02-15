@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+---
+
+<Layout title="404">
+	<section>
+		<h1>404 - Page Not Found</h1>
+		<p class="subtitle">The page you're looking for seems to have vanished into the void.</p>
+		<a href="/" class="back-link">← Return to Homepage</a>
+	</section>
+</Layout>
+
+<style>
+	section {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: var(--spacing-md) var(--spacing-sm);
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		min-height: 50vh;
+	}
+
+	h1 {
+		font-size: var(--font-size-2xl);
+		margin-bottom: var(--spacing-xs);
+		color: var (--accent-color);
+		line-height: 1.2;
+	}
+
+	.subtitle {
+		font-size: var(--font-size-lg);
+		margin-bottom: var(--spacing-lg);
+		opacity: 0.8;
+		line-height: 1.6;
+	}
+
+	.back-link {
+		font-size: var(--font-size-lg);
+		text-decoration: underline;
+	}
+
+	.back-link:hover {
+		opacity: 0.7;
+	}
+</style>

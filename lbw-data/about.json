@@ -1,0 +1,67 @@
+[
+  {
+    "_id": 1,
+    "description": [
+      "as this photography shows, we exist."
+    ],
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/about/they-live.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/about_full/they-live.webp",
+    "picture_alt": "they live"
+  },
+  {
+    "_id": 2,
+    "happened": "2012-02-17",
+    "description": ["birth"],
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise_full/demo/cover.webp",
+    "picture_alt": "Liquid Barbed Wire Logo"
+  },
+  {
+    "_id": 3,
+    "happened": "2014-04-20",
+    "description": ["first <a class='underline' href='https://liquidbarbedwire.bandcamp.com/album/demo'>steps</a>"],
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_628846580541215.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_628846580541215.webp",
+    "picture_alt": "Liquid Barbed Wire Demo CD"
+  },
+  {
+    "_id": 4,
+    "happened": "2016-09-08",
+    "description": ["when there's <a class='underline' href='https://www.facebook.com/liquidbarbedwire/posts/1082840118475190'>no</a> more room in hell"],
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1082840118475190.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1082840118475190.webp",
+    "picture_alt": "our diy rehearsal room had to be removed..."
+  },
+  {
+    "_id": 5,
+    "happened": "████████",
+    "description": ["████████ ██████bl███ ███ac kout███████ ███"],
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/pit/cover.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise_full/pit/cover.webp",
+    "picture_alt": "raw noise from the void"
+  },
+  {
+    "_id": 6,
+    "happened": "2016-12-03",
+    "description": ["the psychedelic <a class='underline' href='https://www.facebook.com/liquidbarbedwire/photos/a.575958869163320.1073741828.334561739969702/1169688896456978/'>mayhem</a> continues"],
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1169688896456978.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1169688896456978.webp",
+    "picture_alt": "new rehearsal doom room"
+  },
+  {
+    "_id": 7,
+    "happened": "2018-03-10",
+    "description": ["<a class='underline' href='https://www.facebook.com/liquidbarbedwire/photos/a.575958869163320.1073741828.334561739969702/1600565376702659/'>mouth</a> grown"],
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1600565376702659.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1600565376702659.webp",
+    "picture_alt": "new band member angelina"
+  },
+  {
+    "_id": 8,
+    "happened": "2020-02-17",
+    "description": ["not <a class='underline' href='https://liquidbarbedwire.bandcamp.com/album/ep/'>dead</a>"],
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/2724286174330568.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/2724286174330568.webp",
+    "picture_alt": "Liquid Barbed Wire EP cover"
+  }
+]

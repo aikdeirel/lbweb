@@ -1,0 +1,192 @@
+---
+import Layout from '../layouts/Layout.astro';
+import newsData from '../../lbw-data/news.json';
+
+// Filter news data for items with picture_large and sort by date in descending order
+const visualData = newsData
+    .filter(item => item.picture_large)
+    .sort((a, b) => new Date(b.happened).getTime() - new Date(a.happened).getTime());
+
+const PAGE_SIZE = 15; // 3 columns × 5 rows
+const currentPage = Number(Astro.url.searchParams.get('page') || '1');
+const start = (currentPage - 1) * PAGE_SIZE;
+const end = start + PAGE_SIZE;
+const totalPages = Math.ceil(visualData.length / PAGE_SIZE);
+const currentImages = visualData.slice(start, end);
+
+// Redirect if invalid page was requested
+if (currentPage > totalPages && visualData.length > 0) {
+    return Astro.redirect('/visual?page=1');
+}
+---
+
+<Layout title="Visual">
+	<section>
+		<h1>enjoy the psychedelic mayhem in pictures</h1>
+
+		<div class="image-grid">
+			{currentImages.map(image => (
+				<a href={image.picture_full || image.picture_large} class="image-link">
+					<img src={image.picture_large} alt={image.picture_alt || image.description?.[0] || ''} loading="lazy" />
+				</a>
+			))}
+		</div>
+
+		{totalPages > 1 && (
+			<div class="pagination">
+				{currentPage > 1 && (
+					<a href={`/visual?page=${currentPage - 1}`}>Previous</a>
+				)}
+				<span>Page {currentPage} of {totalPages}</span>
+				{currentPage < totalPages && (
+					<a href={`/visual?page=${currentPage + 1}`}>Next</a>
+				)}
+			</div>
+		)}
+	</section>
+</Layout>
+
+<style>
+	section {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0 var(--spacing-sm);
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 0.5rem;
+		color: var(--accent-color);
+	}
+
+	.image-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.image-link {
+		display: block;
+		aspect-ratio: 1;
+		overflow: hidden;
+		text-decoration: underline;
+		color: var(--text-color);
+	}
+
+	.image-link img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.3s ease;
+	}
+
+	.image-link:hover img {
+		transform: scale(1.05);
+	}
+
+	.pagination {
+		margin-top: 2rem;
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		align-items: center;
+	}
+
+	.pagination a {
+		color: var(--text-color);
+		text-decoration: underline;
+		padding: 0.5rem 1rem;
+	}
+
+	.pagination a:hover {
+		opacity: 0.7;
+	}
+
+	@media (max-width: 768px) {
+		.image-grid {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.image-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const imageLinks = document.querySelectorAll('.image-link');
+		imageLinks.forEach(link => {
+			link.addEventListener('click', (e) => {
+				e.preventDefault();
+				const url = link.getAttribute('href');
+				if (!url) return;
+				
+				history.pushState({}, '', window.location.pathname + '?image=' + encodeURIComponent(url));
+				const fullscreenContainer = document.createElement('div');
+				fullscreenContainer.className = 'fullscreen-container';
+				fullscreenContainer.innerHTML = `
+					<img src="${url}" alt="" />
+					<button class="close-button">&times;</button>
+				`;
+				document.body.appendChild(fullscreenContainer);
+				document.body.style.overflow = 'hidden';
+
+				const closeButton = fullscreenContainer.querySelector('.close-button');
+				if (closeButton) {
+					closeButton.addEventListener('click', () => {
+						history.back();
+					});
+				}
+
+				window.addEventListener('popstate', () => {
+					if (fullscreenContainer.parentElement) {
+						fullscreenContainer.remove();
+						document.body.style.overflow = '';
+					}
+				});
+			});
+		});
+	});
+</script>
+
+<style is:global>
+	.fullscreen-container {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.9);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 1000;
+	}
+
+	.fullscreen-container img {
+		max-width: 90%;
+		max-height: 90%;
+		object-fit: contain;
+	}
+
+	.close-button {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		background: none;
+		border: none;
+		color: white;
+		font-size: 2rem;
+		cursor: pointer;
+		padding: 10px;
+	}
+
+	.close-button:hover {
+		color: #ccc;
+	}
+</style>

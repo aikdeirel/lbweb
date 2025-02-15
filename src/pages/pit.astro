@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+import pitData from '../../lbw-data/pit.json';
+---
+
+<Layout title="Pit">
+	<section>
+		<h1>raw noise from the pit</h1>
+		<p class="subtitle">here we will randomly publish unedited rehearsal recordings</p>
+
+		{pitData.map(item => (
+			<div class="pit-content">
+				<img src={item.picture_large} alt={item.picture_alt} />
+				<div class="tracks">
+					{item.tracks.map(track => (
+						<div class="track">
+							<audio controls>
+								<source src={track.source} type="audio/mpeg">
+								Your browser does not support the audio element.
+							</audio>
+						</div>
+					))}
+				</div>
+			</div>
+		))}
+	</section>
+</Layout>
+
+<style>
+	section {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 0.5rem;
+		color: var(--accent-color);
+	}
+
+	.subtitle {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		opacity: 0.8;
+	}
+
+	.pit-content {
+		margin-top: 2rem;
+	}
+
+	.pit-content img {
+		width: 100%;
+		max-width: 400px;
+		height: auto;
+		margin: 0 auto 2rem;
+		display: block;
+	}
+
+	.tracks {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.track {
+		background: rgba(255, 255, 255, 0.05);
+		padding: 1rem;
+		border-radius: 4px;
+	}
+
+	audio {
+		width: 100%;
+	}
+
+	audio::-webkit-media-controls-panel {
+		background: rgba(255, 255, 255, 0.1);
+	}
+</style>

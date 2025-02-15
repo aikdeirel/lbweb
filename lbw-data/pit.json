@@ -1,0 +1,17 @@
+[
+  {
+    "_id": 1,
+    "title": "raw noise",
+    "link": "",
+    "link_text": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/pit/cover.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise_full/pit/cover.webp",
+    "picture_alt": "raw noise",
+    "tracks": [
+      {
+        "no": 1,
+        "source": "/noise/pit/wbo.mp3"
+      }
+    ]
+  }
+]

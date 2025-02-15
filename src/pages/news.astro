@@ -1,0 +1,162 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NewsCard from '../components/NewsCard.astro';
+import newsData from '../../lbw-data/news.json';
+
+// Define the allowed news types
+type NewsType = 'status' | 'visual' | 'video' | 'link';
+
+// Type check the news data
+const typedNewsData = newsData.map(news => ({
+    ...news,
+    type: news.type as NewsType
+}));
+
+// Get the raw page parameter
+const pageParam = Astro.url.searchParams.get('page');
+
+// Check for invalid page parameter
+if (pageParam !== null) {
+  const parsed = parseInt(pageParam);
+  if (isNaN(parsed) || parsed < 1) {
+    return new Response(`
+      <html>
+        <head>
+          <title>404 - Bad news everyone!</title>
+          <style>
+            body {
+              background: #111;
+              color: #fff;
+              font-family: monospace;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              height: 100vh;
+              margin: 0;
+              text-align: center;
+            }
+            h1 { color: #ff4444; }
+            a { color: #fff; text-decoration: underline; }
+            a:hover { opacity: 0.7; }
+          </style>
+        </head>
+        <body>
+          <h1>Bad news everyone!</h1>
+          <p>The news seem to have fallen into a black hole.</p>
+          <p><a href="/news">Go back to the news</a>.</p>
+        </body>
+      </html>
+    `, {
+      status: 404,
+      headers: {
+        'Content-Type': 'text/html',
+      },
+    });
+  }
+}
+
+const currentPage = pageParam ? Math.max(1, parseInt(pageParam)) : 1;
+const PAGE_SIZE = 10;
+
+// Create a fresh copy of the data and sort it
+const sortedNewsData = [...typedNewsData].sort((a, b) => 
+  new Date(b.happened).getTime() - new Date(a.happened).getTime()
+);
+
+// Calculate pagination values
+const totalPages = Math.ceil(sortedNewsData.length / PAGE_SIZE);
+const validPage = Math.min(currentPage, totalPages); // Ensure page doesn't exceed total
+const start = (validPage - 1) * PAGE_SIZE;
+const end = Math.min(start + PAGE_SIZE, sortedNewsData.length);
+
+// Get only the news for current page
+const currentNews = sortedNewsData.slice(start, end);
+
+// Redirect if invalid page was requested
+if (currentPage > totalPages) {
+  return Astro.redirect('/news?page=1');
+}
+---
+
+<Layout title="News">
+	<section>
+		<h1>news from the void</h1>
+		<p class="subtitle">updates from the shack, freshly delivered to your interLace TP system for home, office or mobile</p>
+		
+		<div class="news-grid">
+			{currentNews.map(news => (
+				<NewsCard 
+					type={news.type as NewsType}
+					title={news.type === 'status' ? '' : news.type.charAt(0).toUpperCase() + news.type.slice(1)}
+					text={news.description.join(' ')}
+					date={news.happened}
+					picture={news.picture_large}
+					picture_full={news.picture_full}
+					picture_alt={news.picture_alt}
+					video={news.video}
+					link={news.link}
+					post_sub={news.post_sub}
+				/>
+			))}
+		</div>
+
+		{totalPages > 1 && (
+			<div class="pagination">
+				{validPage > 1 && (
+					<a href={`/news?page=${validPage - 1}`} class="prev">← Previous</a>
+				)}
+				{validPage < totalPages && (
+					<a href={`/news?page=${validPage + 1}`} class="next">Next →</a>
+				)}
+			</div>
+		)}
+	</section>
+</Layout>
+
+<style>
+	section {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: var(--spacing-md) var(--spacing-sm);
+	}
+
+	h1 {
+		font-size: var(--font-size-2xl);
+		margin-bottom: var(--spacing-xs);
+		color: var(--accent-color);
+		line-height: 1.2;
+	}
+
+	.subtitle {
+		font-size: var(--font-size-lg);
+		margin-bottom: var(--spacing-lg);
+		opacity: 0.8;
+		max-width: 800px;
+		line-height: 1.6;
+	}
+
+	.news-grid {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-lg);
+	}
+
+	.pagination {
+		display: flex;
+		justify-content: space-between;
+		margin-top: var(--spacing-lg);
+		padding: var(--spacing-md) 0;
+		border-top: 1px solid var(--text-color);
+	}
+
+	.pagination a {
+		color: var(--text-color);
+		text-decoration: none;
+		font-size: var(--font-size-lg);
+	}
+
+	.pagination a:hover {
+		text-decoration: underline;
+	}
+</style>

@@ -1,0 +1,77 @@
+---
+interface Props {
+    title: string;
+    text: string;
+    imageUrl?: string;
+    link?: string;
+}
+
+const { title, text, imageUrl, link } = Astro.props;
+---
+
+<div class="card">
+    <div class="card-content">
+        <div class="text-content">
+            <h3>{title}</h3>
+            <p set:html={text}></p>
+        </div>
+        {imageUrl && <div class="image-content">
+            <img src={imageUrl} alt={title} loading="lazy" />
+        </div>}
+    </div>
+    {link && <a href={link} class="card-link" />}
+</div>
+
+<style>
+    .card {
+        position: relative;
+        background: transparent;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .text-content h3 {
+        font-size: var(--font-size-xl);
+        margin: 0 0 var(--spacing-sm) 0;
+        line-height: 1.2;
+    }
+
+    .text-content p {
+        font-size: var(--font-size-base);
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    .image-content img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    @media (min-width: 768px) {
+        .card-content {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: var(--spacing-lg);
+        }
+
+        .text-content {
+            flex: 9;
+        }
+
+        .image-content {
+            flex: 7;
+        }
+    }
+
+    .card-link {
+        position: absolute;
+        inset: 0;
+        cursor: pointer;
+    }
+</style>

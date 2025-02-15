@@ -1,0 +1,2835 @@
+[
+  {
+    "_id": 2,
+    "type": "link",
+    "happened": "2012-11-08 06:08:52",
+    "description": [
+      "Geht dahin! https://www.mudgate.nl"
+    ],
+    "link_text": "too late",
+    "link": "https://jaapmelman.com/mudgate/index_mg.html",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2012-11-08 06:08:52",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2012-11-08 06:08:52",
+        "dateCreated": "2012-11-08 06:08:52",
+        "articleBody": "Geht dahin! https://www.mudgate.nl",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 3,
+    "type": "link",
+    "happened": "2013-01-01 23:23:36",
+    "description": [
+      "Bono empfiehlt: https://liquidbarbedwire.bandcamp.com/album/silvester-demos"
+    ],
+    "link_text": "too late",
+    "link": "https://liquidbarbedwire.bandcamp.com/album/silvester-demos",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2013-01-01 23:23:36",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2013-01-01 23:23:36",
+        "dateCreated": "2013-01-01 23:23:36",
+        "articleBody": "Bono empfiehlt: https://liquidbarbedwire.bandcamp.com/album/silvester-demos",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 4,
+    "type": "visual",
+    "happened": "2013-04-29 19:50:01",
+    "description": [],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_433443310081544.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_433443310081544.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2013-04-29 19:50:01",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_433443310081544.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2013-04-29 19:50:01",
+        "dateCreated": "2013-04-29 19:50:01",
+        "articleBody": "",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 5,
+    "type": "visual",
+    "happened": "2013-05-09 10:13:44",
+    "description": [
+      "1. Mai"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_437243889701486.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_437243889701486.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2013-05-09 10:13:44",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_437243889701486.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2013-05-09 10:13:44",
+        "dateCreated": "2013-05-09 10:13:44",
+        "articleBody": "1. Mai",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 6,
+    "type": "visual",
+    "happened": "2013-05-09 10:16:59",
+    "description": [
+      "Good news everybody! New rehearsal room of doom!"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_437244616368080.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_437244616368080.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2013-05-09 10:16:59",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_437244616368080.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2013-05-09 10:16:59",
+        "dateCreated": "2013-05-09 10:16:59",
+        "articleBody": "Good news everybody! New rehearsal room of doom!",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 7,
+    "type": "link",
+    "happened": "2013-05-30 06:54:12",
+    "description": [
+      "Shit is getting real. Die Band macht sich auf den Weg zur Fortbildung. https://www.facebook.com/freakvalley?fref=ts"
+    ],
+    "link_text": "freak valley",
+    "link": "https://www.facebook.com/freakvalley/",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2013-05-30 06:54:12",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2013-05-30 06:54:12",
+        "dateCreated": "2013-05-30 06:54:12",
+        "articleBody": "Shit is getting real. Die Band macht sich auf den Weg zur Fortbildung. https://www.facebook.com/freakvalley?fref=ts",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 8,
+    "type": "link",
+    "happened": "2013-06-14 05:14:29",
+    "description": [
+      "Good news everyone. Die Band ist jetzt auch im Internetz angekommen! https://liquidbarbedwire.com/"
+    ],
+    "link_text": "this is here",
+    "link": "https://liquidbarbedwire.com/",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2013-06-14 05:14:29",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2013-06-14 05:14:29",
+        "dateCreated": "2013-06-14 05:14:29",
+        "articleBody": "Good news everyone. Die Band ist jetzt auch im Internetz angekommen! https://liquidbarbedwire.com/",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 9,
+    "type": "link",
+    "happened": "2013-09-27 05:14:56",
+    "description": [
+      "Good news everyone. New old shit: https://liquidbarbedwire.bandcamp.com/album/-"
+    ],
+    "link_text": "too late",
+    "link": "https://liquidbarbedwire.bandcamp.com/album/-",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2013-09-27 05:14:56",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2013-09-27 05:14:56",
+        "dateCreated": "2013-09-27 05:14:56",
+        "articleBody": "Good news everyone. New old shit: https://liquidbarbedwire.bandcamp.com/album/-",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 10,
+    "type": "visual",
+    "happened": "2014-02-20 09:14:42",
+    "description": [
+      "Erster Track im Kasten und fertig 'gemastert' https://liquidbarbedwire.bandcamp.com/track/immortal-snippet"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_575958872496653.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_575958872496653.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-02-20 09:14:42",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_575958872496653.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-02-20 09:14:42",
+        "dateCreated": "2014-02-20 09:14:42",
+        "articleBody": "Erster Track im Kasten und fertig 'gemastert' https://liquidbarbedwire.bandcamp.com/track/immortal-snippet",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 11,
+    "type": "video",
+    "happened": "2014-03-04 06:53:26",
+    "description": [
+      "Good news everyone. Für alle die die am 22.2 unseren ausverkauften Bandgeburtstagsgig verpasst haben, gibts es jetzt den mit unzähligen HD-Kameras gefilmten Livemitschnitt auf Youp... Youtube: https://www.youtube.com/watch?v=R35GWP5fBOE"
+    ],
+    "link_text": "view no youtube",
+    "link": "https://www.youtube.com/watch?v=R35GWP5fBOE",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_295096320644144.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_295096320644144.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-03-04 06:53:26",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_295096320644144.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-03-04 06:53:26",
+        "dateCreated": "2014-03-04 06:53:26",
+        "articleBody": "Good news everyone. Für alle die die am 22.2 unseren ausverkauften Bandgeburtstagsgig verpasst haben, gibts es jetzt den mit unzähligen HD-Kameras gefilmten Livemitschnitt auf Youp... Youtube: https://www.youtube.com/watch?v=R35GWP5fBOE",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 13,
+    "type": "link",
+    "happened": "2014-03-19 10:13:42",
+    "description": [
+      "Good news everyone! Zweiter und letzter Track für die Demo ist aufgenommen. Jetzt kann das 'Mastern' beginnen. Sollte es währenddessen wider erwarten keine Angriffe von Velociraptoren geben - das Gras wird wieder höher - soll die Demo als CD und Download am 20.04 das Licht der Welt erblicken.  https://en.wikipedia.org/wiki/420_%28cannabis_culture%29"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-03-19 10:13:42",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-03-19 10:13:42",
+        "dateCreated": "2014-03-19 10:13:42",
+        "articleBody": "Good news everyone! Zweiter und letzter Track für die Demo ist aufgenommen. Jetzt kann das 'Mastern' beginnen. Sollte es währenddessen wider erwarten keine Angriffe von Velociraptoren geben - das Gras wird wieder höher - soll die Demo als CD und Download am 20.04 das Licht der Welt erblicken.  https://en.wikipedia.org/wiki/420_%28cannabis_culture%29",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 14,
+    "type": "video",
+    "happened": "2014-04-20 13:09:28",
+    "description": [
+      "Good news everyone: Demo ist fertig. Kann runtergeladen werden. CD's verspäten sich etwas, weil alles voller Pferde war. Wie bei Herr der Ringe.  Also. Lunte an. Happy 420th.  https://liquidbarbedwire.bandcamp.com/releases"
+    ],
+    "link_text": "click and lunte an",
+    "link": "https://liquidbarbedwire.bandcamp.com/releases",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_605075026251704.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_605075026251704.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-04-20 13:09:28",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_605075026251704.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-04-20 13:09:28",
+        "dateCreated": "2014-04-20 13:09:28",
+        "articleBody": "Good news everyone: Demo ist fertig. Kann runtergeladen werden. CD's verspäten sich etwas, weil alles voller Pferde war. Wie bei Herr der Ringe.  Also. Lunte an. Happy 420th.  https://liquidbarbedwire.bandcamp.com/releases",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 15,
+    "type": "link",
+    "happened": "2014-04-20 13:11:27",
+    "description": [
+      "Und noch ein bisschen Zombie Jesus zum Osterfest. https://www.explosm.net/db/files/Comics/Kris/easter9.png"
+    ],
+    "link_text": "zombie jesus",
+    "link": "https://www.explosm.net/db/files/Comics/Kris/easter9.png",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-04-20 13:11:27",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-04-20 13:11:27",
+        "dateCreated": "2014-04-20 13:11:27",
+        "articleBody": "Und noch ein bisschen Zombie Jesus zum Osterfest. https://www.explosm.net/db/files/Comics/Kris/easter9.png",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 16,
+    "type": "visual",
+    "happened": "2014-04-20 15:37:03",
+    "description": [
+      "Shit is new and stuff Good heavens, look at the time. It's fun o' clock."
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_605142926244914.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_605142926244914.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-04-20 15:37:03",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_605142926244914.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-04-20 15:37:03",
+        "dateCreated": "2014-04-20 15:37:03",
+        "articleBody": "Shit is new and stuff Good heavens, look at the time. It's fun o' clock.",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 17,
+    "type": "link",
+    "happened": "2015-07-14 10:48:03",
+    "description": [],
+    "link_text": "",
+    "link": "",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-07-14 10:48:03",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-07-14 10:48:03",
+        "dateCreated": "2015-07-14 10:48:03",
+        "articleBody": "",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 18,
+    "type": "visual",
+    "happened": "2014-05-25 18:37:42",
+    "description": [
+      "Good news everyone, look what the cat dragged in."
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_623358867756653.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_623358867756653.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-05-25 18:37:42",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_623358867756653.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-05-25 18:37:42",
+        "dateCreated": "2014-05-25 18:37:42",
+        "articleBody": "Good news everyone, look what the cat dragged in.",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 19,
+    "type": "video",
+    "happened": "2014-06-05 11:02:05",
+    "description": [
+      "Good news everyone! Jetzt gibt es auch endlich im Shop die Polycarbonatscheiben für nur zweifuffzich! Handgebrannt und durchnummeriert. Nur 77 Stück.  Also kauft die Scheiße bevor sie auf dem Index landet.  https://liquidbarbedwire.bandcamp.com/releases"
+    ],
+    "link_text": "demo on bandcamp",
+    "link": "https://liquidbarbedwire.bandcamp.com/releases",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_628846580541215.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_628846580541215.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-06-05 11:02:05",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_628846580541215.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-06-05 11:02:05",
+        "dateCreated": "2014-06-05 11:02:05",
+        "articleBody": "Good news everyone! Jetzt gibt es auch endlich im Shop die Polycarbonatscheiben für nur zweifuffzich! Handgebrannt und durchnummeriert. Nur 77 Stück.  Also kauft die Scheiße bevor sie auf dem Index landet.  https://liquidbarbedwire.bandcamp.com/releases",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 20,
+    "type": "visual",
+    "happened": "2014-07-02 16:00:45",
+    "description": [],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_645142072244999.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_645142072244999.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-07-02 16:00:45",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_645142072244999.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-07-02 16:00:45",
+        "dateCreated": "2014-07-02 16:00:45",
+        "articleBody": "",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 21,
+    "type": "link",
+    "happened": "2014-07-17 18:03:43",
+    "description": [
+      "Good news everyone! The demo is now also available at Ozium Records. Get it while it still lasts."
+    ],
+    "link_text": "ozium records",
+    "link": "https://oziumrecords.com/shop/details/1506",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-07-17 18:03:43",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-07-17 18:03:43",
+        "dateCreated": "2014-07-17 18:03:43",
+        "articleBody": "Good news everyone! The demo is now also available at Ozium Records. Get it while it still lasts.",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 22,
+    "type": "video",
+    "happened": "2014-07-31 05:14:04",
+    "description": [
+      "Good morning everyone!  https://www.youtube.com/watch?v=zYb-VhTo2Cs"
+    ],
+    "link_text": "25",
+    "link": "https://www.youtube.com/watch?v=zYb-VhTo2Cs",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_659418440817362.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_659418440817362.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-07-31 05:14:04",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_659418440817362.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-07-31 05:14:04",
+        "dateCreated": "2014-07-31 05:14:04",
+        "articleBody": "Good morning everyone!  https://www.youtube.com/watch?v=zYb-VhTo2Cs",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 23,
+    "type": "video",
+    "happened": "2014-08-05 08:43:21",
+    "description": [
+      "Good news everyone: Space music actually exists. Thank you.  https://www.youtube.com/watch?v=-MmWeZHsQzs"
+    ],
+    "link_text": "space music",
+    "link": "https://www.youtube.com/watch?v=-MmWeZHsQzs",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_662151783877361.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_662151783877361.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-08-05 08:43:21",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_662151783877361.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-08-05 08:43:21",
+        "dateCreated": "2014-08-05 08:43:21",
+        "articleBody": "Good news everyone: Space music actually exists. Thank you.  https://www.youtube.com/watch?v=-MmWeZHsQzs",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 24,
+    "type": "link",
+    "happened": "2014-08-09 22:05:01",
+    "description": [
+      "...and so it begins again!"
+    ],
+    "link_text": "too late",
+    "link": "https://api.ning.com/files/Sb*4boFSxeNvxx8hlGngFTffedKoEreY9Ki0f3yAyZPhM72vc*MCrlQBWfNESDBG9-*dSME1it2SLz5jxzNBeaB9ZmEbUSk0/SharkWeek.webp",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-08-09 22:05:01",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-08-09 22:05:01",
+        "dateCreated": "2014-08-09 22:05:01",
+        "articleBody": "...and so it begins again!",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 25,
+    "type": "visual",
+    "happened": "2014-08-30 14:58:44",
+    "description": [
+      "We're getting ready to celebrate the 27th birthday of our beloved drummer Mike (*31.08.1987-+??.??.????)!"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_674321252660414.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_674321252660414.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-08-30 14:58:44",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_674321252660414.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-08-30 14:58:44",
+        "dateCreated": "2014-08-30 14:58:44",
+        "articleBody": "We're getting ready to celebrate the 27th birthday of our beloved drummer Mike (*31.08.1987-+??.??.????)!",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 26,
+    "type": "visual",
+    "happened": "2014-08-30 16:41:01",
+    "description": [
+      "Going quite well so far..."
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_674363972656142.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_674363972656142.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-08-30 16:41:01",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_674363972656142.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-08-30 16:41:01",
+        "dateCreated": "2014-08-30 16:41:01",
+        "articleBody": "Going quite well so far...",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 27,
+    "type": "visual",
+    "happened": "2014-11-29 22:26:16",
+    "description": [
+      "Creative destruction"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_724304667662072.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_724304667662072.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2014-11-29 22:26:16",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_724304667662072.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2014-11-29 22:26:16",
+        "dateCreated": "2014-11-29 22:26:16",
+        "articleBody": "Creative destruction",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 28,
+    "type": "visual",
+    "happened": "2015-01-09 19:04:16",
+    "description": [
+      "Hi, I'm Pat. The new one."
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_748530175239521.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_748530175239521.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-01-09 19:04:16",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_748530175239521.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-01-09 19:04:16",
+        "dateCreated": "2015-01-09 19:04:16",
+        "articleBody": "Hi, I'm Pat. The new one.",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 29,
+    "type": "visual",
+    "happened": "2015-03-21 14:07:28",
+    "description": [
+      "Let the juices flow"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_784776498281555.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_784776498281555.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-03-21 14:07:28",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_784776498281555.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-03-21 14:07:28",
+        "dateCreated": "2015-03-21 14:07:28",
+        "articleBody": "Let the juices flow",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 30,
+    "type": "visual",
+    "happened": "2015-04-20 19:32:02",
+    "description": [],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_801176246641580.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_801176246641580.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-04-20 19:32:02",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_801176246641580.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-04-20 19:32:02",
+        "dateCreated": "2015-04-20 19:32:02",
+        "articleBody": "",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 31,
+    "type": "link",
+    "happened": "2015-06-01 17:55:07",
+    "description": [
+      "Good news everyone! We've uploaded a track we recorded saturday. Also make yourself a bookmark because in the future we will randomly put stuff there. Also fuck the norms. https://liquidbarbedwire.com/pit/"
+    ],
+    "link_text": "go into the pit",
+    "link": "https://liquidbarbedwire.com/pit/",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-06-01 17:55:07",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-06-01 17:55:07",
+        "dateCreated": "2015-06-01 17:55:07",
+        "articleBody": "Good news everyone! We've uploaded a track we recorded saturday. Also make yourself a bookmark because in the future we will randomly put stuff there. Also fuck the norms. https://liquidbarbedwire.com/pit/",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 32,
+    "type": "visual",
+    "happened": "2015-06-10 07:51:17",
+    "description": [
+      "#FreakValley"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_826033627489175.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_826033627489175.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-06-10 07:51:17",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_826033627489175.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-06-10 07:51:17",
+        "dateCreated": "2015-06-10 07:51:17",
+        "articleBody": "#FreakValley",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 33,
+    "type": "visual",
+    "happened": "2015-06-20 14:29:12",
+    "description": [
+      "Good news everyone! We finally managed to figure out which genre we play. #progressivebanecore #shit"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_832020276890510.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_832020276890510.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-06-20 14:29:12",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_832020276890510.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-06-20 14:29:12",
+        "dateCreated": "2015-06-20 14:29:12",
+        "articleBody": "Good news everyone! We finally managed to figure out which genre we play. #progressivebanecore #shit",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 34,
+    "type": "visual",
+    "happened": "2015-06-26 14:49:46",
+    "description": [],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_834863793272825.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_834863793272825.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-06-26 14:49:46",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_834863793272825.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-06-26 14:49:46",
+        "dateCreated": "2015-06-26 14:49:46",
+        "articleBody": "",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 35,
+    "type": "status",
+    "happened": "2015-06-27 16:43:39",
+    "description": [
+      "Lieber fett als druff #YOLO"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-06-27 16:43:39",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-06-27 16:43:39",
+        "dateCreated": "2015-06-27 16:43:39",
+        "articleBody": "Lieber fett als druff #YOLO",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 36,
+    "type": "link",
+    "happened": "2015-06-30 11:04:43",
+    "description": [
+      "Remember, remember, soon it's the 5th of november  https://www.liquidbarbedwire.com/pit"
+    ],
+    "link_text": "go into the pit",
+    "link": "https://www.liquidbarbedwire.com/pit",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-06-30 11:04:43",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-06-30 11:04:43",
+        "dateCreated": "2015-06-30 11:04:43",
+        "articleBody": "Remember, remember, soon it's the 5th of november  https://www.liquidbarbedwire.com/pit",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 37,
+    "type": "status",
+    "happened": "2015-08-15 15:18:10",
+    "description": [
+      "Bad news everyone! Our music is so boring, Mike fell asleep last night at the end of the track we were rehearsing."
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-08-15 15:18:10",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-08-15 15:18:10",
+        "dateCreated": "2015-08-15 15:18:10",
+        "articleBody": "Bad news everyone! Our music is so boring, Mike fell asleep last night at the end of the track we were rehearsing.",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 38,
+    "type": "visual",
+    "happened": "2015-10-19 16:15:53",
+    "description": [],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_887947767964427.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_887947767964427.webp",
+    "post_sub": [
+      {
+        "_id": 39,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/887947384631132.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/887947384631132.webp"
+      },
+      {
+        "_id": 40,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/887947584631112.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/887947584631112.webp"
+      }
+    ],
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-10-19 16:15:53",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_887947767964427.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-10-19 16:15:53",
+        "dateCreated": "2015-10-19 16:15:53",
+        "articleBody": "",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 41,
+    "type": "visual",
+    "happened": "2015-10-31 21:24:56",
+    "description": [],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_892748704151000.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_892748704151000.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-10-31 21:24:56",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_892748704151000.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-10-31 21:24:56",
+        "dateCreated": "2015-10-31 21:24:56",
+        "articleBody": "",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 42,
+    "type": "status",
+    "happened": "2015-10-31 21:51:19",
+    "description": [
+      "Happy Heroine Eve!"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-10-31 21:51:19",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-10-31 21:51:19",
+        "dateCreated": "2015-10-31 21:51:19",
+        "articleBody": "Happy Heroine Eve!",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 43,
+    "type": "visual",
+    "happened": "2015-11-07 18:01:48",
+    "description": [
+      "Meanwhile at the shack"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_895484273877443.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_895484273877443.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-11-07 18:01:48",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_895484273877443.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-11-07 18:01:48",
+        "dateCreated": "2015-11-07 18:01:48",
+        "articleBody": "Meanwhile at the shack",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 44,
+    "type": "video",
+    "happened": "2015-12-27 15:20:19",
+    "description": [
+      "Good news everyone"
+    ],
+    "video": "/feed/334561739969702_915896515169552.mp4",
+    "videoCaption": "/feed/334561739969702_915896515169552.vtt",
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_915896515169552.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_915896515169552.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2015-12-27 15:20:19",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_915896515169552.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2015-12-27 15:20:19",
+        "dateCreated": "2015-12-27 15:20:19",
+        "articleBody": "Good news everyone",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 45,
+    "type": "visual",
+    "happened": "2016-01-02 17:30:51",
+    "description": [
+      "Same shit, different year"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_921857511240119.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_921857511240119.webp",
+    "post_sub": [
+      {
+        "_id": 46,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/921855607906976.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/921855607906976.webp"
+      },
+      {
+        "_id": 47,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/921855917906945.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/921855917906945.webp"
+      },
+      {
+        "_id": 48,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/921857334573470.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/921857334573470.webp"
+      }
+    ],
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-01-02 17:30:51",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_921857511240119.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-01-02 17:30:51",
+        "dateCreated": "2016-01-02 17:30:51",
+        "articleBody": "Same shit, different year",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 49,
+    "type": "visual",
+    "happened": "2016-01-09 17:36:09",
+    "description": [
+      "Good news everyone: Tap, the new new one!"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_925600630865807.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_925600630865807.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-01-09 17:36:09",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_925600630865807.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-01-09 17:36:09",
+        "dateCreated": "2016-01-09 17:36:09",
+        "articleBody": "Good news everyone: Tap, the new new one!",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 50,
+    "type": "status",
+    "happened": "2016-01-16 22:00:20",
+    "description": [
+      "Remember: more terratape"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-01-16 22:00:20",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-01-16 22:00:20",
+        "dateCreated": "2016-01-16 22:00:20",
+        "articleBody": "Remember: more terratape",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 51,
+    "type": "link",
+    "happened": "2016-01-30 14:05:16",
+    "description": [
+      "Beware, the youth of the world is on the move! And their aim is to take over!"
+    ],
+    "link_text": "beware...",
+    "link": "https://vimeo.com/49424272",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-01-30 14:05:16",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-01-30 14:05:16",
+        "dateCreated": "2016-01-30 14:05:16",
+        "articleBody": "Beware, the youth of the world is on the move! And their aim is to take over!",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 52,
+    "type": "visual",
+    "happened": "2016-02-06 18:05:35",
+    "description": [
+      "the ceiling is lava. lol"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_940193336073203.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_940193336073203.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-02-06 18:05:35",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_940193336073203.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-02-06 18:05:35",
+        "dateCreated": "2016-02-06 18:05:35",
+        "articleBody": "the ceiling is lava. lol",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 53,
+    "type": "visual",
+    "happened": "2016-02-06 20:05:56",
+    "description": [
+      "the wall is also lava"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_940237442735459.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_940237442735459.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-02-06 20:05:56",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_940237442735459.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-02-06 20:05:56",
+        "dateCreated": "2016-02-06 20:05:56",
+        "articleBody": "the wall is also lava",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 54,
+    "type": "visual",
+    "happened": "2016-02-06 22:37:16",
+    "description": [
+      "Fuck you! I won't do what you tell me!"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_940296709396199.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_940296709396199.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-02-06 22:37:16",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_940296709396199.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-02-06 22:37:16",
+        "dateCreated": "2016-02-06 22:37:16",
+        "articleBody": "Fuck you! I won't do what you tell me!",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 55,
+    "type": "link",
+    "happened": "2016-02-09 18:12:43",
+    "description": [
+      "Good news everyone! Fresh shit in the pit!  https://liquidbarbedwire.com/pit/"
+    ],
+    "link_text": "go into the pit",
+    "link": "https://liquidbarbedwire.com/pit/",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-02-09 18:12:43",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-02-09 18:12:43",
+        "dateCreated": "2016-02-09 18:12:43",
+        "articleBody": "Good news everyone! Fresh shit in the pit!  https://liquidbarbedwire.com/pit/",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 56,
+    "type": "visual",
+    "happened": "2016-02-17 17:02:46",
+    "description": [
+      "Happy birthday to us! 4 years of something."
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_946116572147546.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_946116572147546.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-02-17 17:02:46",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_946116572147546.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-02-17 17:02:46",
+        "dateCreated": "2016-02-17 17:02:46",
+        "articleBody": "Happy birthday to us! 4 years of something.",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 57,
+    "type": "link",
+    "happened": "2016-02-25 19:59:13",
+    "description": [
+      "Good news everyone! Seems like we've found our new rehearsal space."
+    ],
+    "link_text": "69 cock lane",
+    "link": "https://dangerousminds.net/comments/the_address_of_your_dreams_69_cock_lane_is_for_sale",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-02-25 19:59:13",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-02-25 19:59:13",
+        "dateCreated": "2016-02-25 19:59:13",
+        "articleBody": "Good news everyone! Seems like we've found our new rehearsal space.",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 58,
+    "type": "visual",
+    "happened": "2016-02-26 20:13:44",
+    "description": [
+      "Good news everyone! Super phun tyme!"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_951288878296982.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_951288878296982.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-02-26 20:13:44",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_951288878296982.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-02-26 20:13:44",
+        "dateCreated": "2016-02-26 20:13:44",
+        "articleBody": "Good news everyone! Super phun tyme!",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 59,
+    "type": "video",
+    "happened": "2016-03-05 11:39:47",
+    "description": [
+      "Good news everyone! Good news!"
+    ],
+    "link_text": "marble machine",
+    "link": "https://www.youtube.com/watch?v=IvUU8joBb1Q",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_955357074556829.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_955357074556829.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-03-05 11:39:47",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_955357074556829.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-03-05 11:39:47",
+        "dateCreated": "2016-03-05 11:39:47",
+        "articleBody": "Good news everyone! Good news!",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 60,
+    "type": "video",
+    "happened": "2016-03-19 14:58:42",
+    "description": [
+      "No no"
+    ],
+    "link_text": "",
+    "link": "https://www.youtube.com/watch?v=t6m3ksi1HWY",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_964077937018076.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_964077937018076.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-03-19 14:58:42",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_964077937018076.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-03-19 14:58:42",
+        "dateCreated": "2016-03-19 14:58:42",
+        "articleBody": "No no",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 61,
+    "type": "status",
+    "happened": "2016-03-20 00:16:48",
+    "description": [
+      "Good news everyone: 113 days till shark week"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-03-20 00:16:48",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-03-20 00:16:48",
+        "dateCreated": "2016-03-20 00:16:48",
+        "articleBody": "Good news everyone: 113 days till shark week",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 62,
+    "type": "video",
+    "happened": "2016-03-23 17:59:10",
+    "description": [],
+    "link_text": "lunch with danny",
+    "link": "https://www.youtube.com/watch?v=XP0CUi9DOaI",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_967723083320228.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_967723083320228.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-03-23 17:59:10",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_967723083320228.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-03-23 17:59:10",
+        "dateCreated": "2016-03-23 17:59:10",
+        "articleBody": "",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 63,
+    "type": "visual",
+    "happened": "2016-03-27 20:05:27",
+    "description": [
+      "Good news everyone: All praise firekat from hell \\o/"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_971761146249755.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_971761146249755.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-03-27 20:05:27",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_971761146249755.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-03-27 20:05:27",
+        "dateCreated": "2016-03-27 20:05:27",
+        "articleBody": "Good news everyone: All praise firekat from hell \\o/",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 64,
+    "type": "video",
+    "happened": "2016-04-01 18:16:56",
+    "description": [
+      "Big news everyone:  Due to the loss of our holy rehearsal space in the Silver Chrack Shack we need to get rid of the drums because of loudness issues to countinue our journey of psychedelic mayhem.  So new year, new synthie, new rehearsal room and new line up:  Two Synthesizers, two bassguitars, three of god's own prototypes!  Enjoy the new sound from Cock Lane 69"
+    ],
+    "video": "/feed/334561739969702_975669075858962.mp4",
+    "videoCaption": "/feed/334561739969702_975669075858962.vtt",
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_975669075858962.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_975669075858962.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-04-01 18:16:56",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_975669075858962.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-04-01 18:16:56",
+        "dateCreated": "2016-04-01 18:16:56",
+        "articleBody": "Big news everyone:  Due to the loss of our holy rehearsal space in the Silver Chrack Shack we need to get rid of the drums because of loudness issues to countinue our journey of psychedelic mayhem.  So new year, new synthie, new rehearsal room and new line up:  Two Synthesizers, two bassguitars, three of god's own prototypes!  Enjoy the new sound from Cock Lane 69",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 65,
+    "type": "visual",
+    "happened": "2016-04-02 17:10:10",
+    "description": [
+      "Good news everyone: The recording we uploaded  yesterday was of course just an april fools joke."
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_977174952375041.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_977174952375041.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-04-02 17:10:10",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_977174952375041.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-04-02 17:10:10",
+        "dateCreated": "2016-04-02 17:10:10",
+        "articleBody": "Good news everyone: The recording we uploaded  yesterday was of course just an april fools joke.",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 66,
+    "type": "visual",
+    "happened": "2016-04-09 22:16:59",
+    "description": [
+      "When there's no more doom in hell..."
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_981438945281975.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_981438945281975.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-04-09 22:16:59",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_981438945281975.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-04-09 22:16:59",
+        "dateCreated": "2016-04-09 22:16:59",
+        "articleBody": "When there's no more doom in hell...",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 67,
+    "type": "visual",
+    "happened": "2016-04-16 23:54:27",
+    "description": [],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_985494148209788.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_985494148209788.webp",
+    "post_sub": [
+      {
+        "_id": 68,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/985492808209922.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/985492808209922.webp"
+      },
+      {
+        "_id": 69,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/985492798209923.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/985492798209923.webp"
+      },
+      {
+        "_id": 70,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/985492804876589.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/985492804876589.webp"
+      },
+      {
+        "_id": 71,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/985492871543249.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/985492871543249.webp"
+      },
+      {
+        "_id": 72,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/985492861543250.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/985492861543250.webp"
+      },
+      {
+        "_id": 73,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/985492874876582.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/985492874876582.webp"
+      },
+      {
+        "_id": 74,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/985492904876579.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/985492904876579.webp"
+      },
+      {
+        "_id": 75,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/985492924876577.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/985492924876577.webp"
+      },
+      {
+        "_id": 76,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/985492918209911.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/985492918209911.webp"
+      },
+      {
+        "_id": 77,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/985492938209909.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/985492938209909.webp"
+      },
+      {
+        "_id": 78,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/985492971543239.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/985492971543239.webp"
+      },
+      {
+        "_id": 79,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/985493021543234.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/985493021543234.webp"
+      }
+    ],
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-04-16 23:54:27",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_985494148209788.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-04-16 23:54:27",
+        "dateCreated": "2016-04-16 23:54:27",
+        "articleBody": "",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 80,
+    "type": "visual",
+    "happened": "2016-04-20 16:07:57",
+    "description": [
+      "Do it \\o/"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_987721524653717.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_987721524653717.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-04-20 16:07:57",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_987721524653717.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-04-20 16:07:57",
+        "dateCreated": "2016-04-20 16:07:57",
+        "articleBody": "Do it \\o/",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 81,
+    "type": "link",
+    "happened": "2016-05-09 20:32:24",
+    "description": [
+      "Bad news everyone! Another shitty ending"
+    ],
+    "link_text": "go into the pit",
+    "link": "https://liquidbarbedwire.com/pit/",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-05-09 20:32:24",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-05-09 20:32:24",
+        "dateCreated": "2016-05-09 20:32:24",
+        "articleBody": "Bad news everyone! Another shitty ending",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 82,
+    "type": "visual",
+    "happened": "2016-09-08 18:17:12",
+    "description": [
+      "Sad news everyone! When there's no more room in hell..."
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1082840118475190.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1082840118475190.webp",
+    "post_sub": [
+      {
+        "_id": 83,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/1082838505142018.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/1082838505142018.webp"
+      },
+      {
+        "_id": 84,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/1082838781808657.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/1082838781808657.webp"
+      },
+      {
+        "_id": 85,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/1082838455142023.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/1082838455142023.webp"
+      },
+      {
+        "_id": 86,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/1082839871808548.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/1082839871808548.webp"
+      },
+      {
+        "_id": 87,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/1082839541808581.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/1082839541808581.webp"
+      },
+      {
+        "_id": 88,
+        "type": "visual",
+        "link_text": "",
+        "link": "",
+        "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/1082839538475248.webp",
+        "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/1082839538475248.webp"
+      }
+    ],
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-09-08 18:17:12",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1082840118475190.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-09-08 18:17:12",
+        "dateCreated": "2016-09-08 18:17:12",
+        "articleBody": "Sad news everyone! When there's no more room in hell...",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 89,
+    "type": "status",
+    "happened": "2016-09-17 12:42:38",
+    "description": [
+      "Good news everyone! We finally dragged our butts to Instgram because we are so ultimatively bored without a rehearsal space. Expect some wird stuff #lbwstyle https://www.instagram.com/liquidbarbedwire"
+    ],
+    "link_text": "too late",
+    "link": "https://www.instagram.com/liquidbarbedwire",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-09-17 12:42:38",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-09-17 12:42:38",
+        "dateCreated": "2016-09-17 12:42:38",
+        "articleBody": "Good news everyone! We finally dragged our butts to Instgram because we are so ultimatively bored without a rehearsal space. Expect some wird stuff #lbwstyle https://www.instagram.com/liquidbarbedwire",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 90,
+    "type": "visual",
+    "happened": "2016-10-01 12:58:46",
+    "description": [],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1103569279735607.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1103569279735607.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-10-01 12:58:46",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1103569279735607.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-10-01 12:58:46",
+        "dateCreated": "2016-10-01 12:58:46",
+        "articleBody": "",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 91,
+    "type": "visual",
+    "happened": "2016-10-07 17:05:42",
+    "description": [],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1109015909190944.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1109015909190944.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-10-07 17:05:42",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1109015909190944.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-10-07 17:05:42",
+        "dateCreated": "2016-10-07 17:05:42",
+        "articleBody": "",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 92,
+    "type": "visual",
+    "happened": "2016-11-26 18:08:44",
+    "description": [
+      "night walks   #liquidbarbedwire #lbwstyle #band #psychedelic #instrumental #noice #forest #night #noise #praisethemonolord #doom #occult"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1162151890544012.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1162151890544012.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-11-26 18:08:44",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1162151890544012.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-11-26 18:08:44",
+        "dateCreated": "2016-11-26 18:08:44",
+        "articleBody": "night walks   #liquidbarbedwire #lbwstyle #band #psychedelic #instrumental #noice #forest #night #noise #praisethemonolord #doom #occult",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 93,
+    "type": "visual",
+    "happened": "2016-12-04 12:26:24",
+    "description": [
+      "good news everyone! great depression is over. found a new rehearsal room. now we can continue our journey of psychedelic mayhem. #liquidbarbedwire #lbwstyle #band #psychedelic #instrumental #noice #noise  #praisethemonolord #doom #occult #rehearsal"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1169688896456978.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1169688896456978.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-12-04 12:26:24",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1169688896456978.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-12-04 12:26:24",
+        "dateCreated": "2016-12-04 12:26:24",
+        "articleBody": "good news everyone! great depression is over. found a new rehearsal room. now we can continue our journey of psychedelic mayhem. #liquidbarbedwire #lbwstyle #band #psychedelic #instrumental #noice #noise  #praisethemonolord #doom #occult #rehearsal",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 94,
+    "type": "visual",
+    "happened": "2016-12-17 21:00:25",
+    "description": [
+      "Good news everyone! Just finished the first jam at our new rehearsal room. Shit was cash, so much more room for activities. We guess you can expect some nice - and more important: different - tunes for the future! #lbwstyle"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1182924785133389.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1182924785133389.webp",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2016-12-17 21:00:25",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1182924785133389.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2016-12-17 21:00:25",
+        "dateCreated": "2016-12-17 21:00:25",
+        "articleBody": "Good news everyone! Just finished the first jam at our new rehearsal room. Shit was cash, so much more room for activities. We guess you can expect some nice - and more important: different - tunes for the future! #lbwstyle",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 95,
+    "type": "visual",
+    "happened": "2017-01-14 17:39:07",
+    "description": [
+      "new boxbanana #lbwstyle #lbw #liquidbarbedwire #rehearsal #noise #doom #occult #chiquita #banana #boss #bosspedal #bass #overdrive #pedalboard"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1205138916245309.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1205138916245309.webp",
+    "picture_alt": "boss pedal obd-3",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2017-01-14 17:39:07",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1205138916245309.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2017-01-14 17:39:07",
+        "dateCreated": "2017-01-14 17:39:07",
+        "articleBody": "new boxbanana #lbwstyle #lbw #liquidbarbedwire #rehearsal #noise #doom #occult #chiquita #banana #boss #bosspedal #bass #overdrive #pedalboard",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 96,
+    "type": "visual",
+    "happened": "2017-02-17 20:54:14",
+    "description": [
+      "5 years, same shit, different colour"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1240125122746688.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1240125122746688.webp",
+    "picture_alt": "psycehdelic light projection",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2017-02-17 20:54:14",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1240125122746688.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2017-02-17 20:54:14",
+        "dateCreated": "2017-02-17 20:54:14",
+        "articleBody": "5 years, same shit, different colour",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 97,
+    "type": "visual",
+    "happened": "2017-02-19 18:55:52",
+    "description": [],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1242522509173616.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1242522509173616.webp",
+    "picture_alt": "5 years #lbwstyle cake",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2017-02-19 18:55:52",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1242522509173616.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2017-02-19 18:55:52",
+        "dateCreated": "2017-02-19 18:55:52",
+        "articleBody": "",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 98,
+    "type": "visual",
+    "happened": "2017-03-10 19:44:50",
+    "description": [
+      "it's getting hot in here, so prop up all your amps too loud, blew up the fuse"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1263994923693041.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1263994923693041.webp",
+    "picture_alt": "amp blown up",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2017-03-10 19:44:50",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1263994923693041.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2017-03-10 19:44:50",
+        "dateCreated": "2017-03-10 19:44:50",
+        "articleBody": "it's getting hot in here, so prop up all your amps too loud, blew up the fuse",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 99,
+    "type": "video",
+    "happened": "2017-04-06 16:29:49",
+    "description": [
+      "good news everyone! we were struck by a (huge) radiating cloud of creativity. so we recorded a quick video. all done in one take with our friend Darius doing the visuals at the same time. almost everything done with analog equipment (except for 1 synthesizer [out of 2], 1 videocamera) #diyordie"
+    ],
+    "link_text": "listen on youtube",
+    "link": "https://youtu.be/GXlk0CkYBYo",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1287603411332192.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1287603411332192.webp",
+    "picture_alt": "open youtube video: Liquid Barbed Wire - Journey Through A Dead Land",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2017-04-06 16:29:49",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1287603411332192.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2017-04-06 16:29:49",
+        "dateCreated": "2017-04-06 16:29:49",
+        "articleBody": "good news everyone! we were struck by a (huge) radiating cloud of creativity. so we recorded a quick video. all done in one take with our friend Darius doing the visuals at the same time. almost everything done with analog equipment (except for 1 synthesizer [out of 2], 1 videocamera) #diyordie",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 100,
+    "type": "visual",
+    "happened": "2017-06-03 21:57:48",
+    "description": [
+      "command center"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1339657619460104.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1339657619460104.webp",
+    "picture_alt": "command center",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2017-06-03 21:57:48",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1339657619460104.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2017-06-03 21:57:48",
+        "dateCreated": "2017-06-03 21:57:48",
+        "articleBody": "command center",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 101,
+    "type": "visual",
+    "happened": "2017-07-15 18:52:11",
+    "description": [
+      "tuning is fun"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1382383331854199.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1382383331854199.webp",
+    "picture_alt": "drum tuning",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2017-07-15 18:52:11",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1382383331854199.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2017-07-15 18:52:11",
+        "dateCreated": "2017-07-15 18:52:11",
+        "articleBody": "tuning is fun",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 102,
+    "type": "visual",
+    "happened": "2017-07-22 23:00:51",
+    "description": [
+      "good news everyone! it's shark week"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1389393611153171.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1389393611153171.webp",
+    "picture_alt": "shark week hugs and kisses",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2017-07-22 23:00:51",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1389393611153171.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2017-07-22 23:00:51",
+        "dateCreated": "2017-07-22 23:00:51",
+        "articleBody": "good news everyone! it's shark week",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 103,
+    "type": "video",
+    "happened": "2017-10-31 14:28:26",
+    "description": [
+      "10.23am: the melting of the tundra has begun"
+    ],
+    "video": "/feed/334561739969702_1476001352492396.mp4",
+    "videoCaption": "/feed/334561739969702_1476001352492396.vtt",
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1476001352492396.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1476001352492396.webp",
+    "picture_alt": "start video: melting of tundra has begun",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2017-10-31 14:28:26",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1476001352492396.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2017-10-31 14:28:26",
+        "dateCreated": "2017-10-31 14:28:26",
+        "articleBody": "10.23am: the melting of the tundra has begun",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 104,
+    "type": "visual",
+    "happened": "2018-03-10 15:01:12",
+    "description": [
+      "good news everyone! from this point on in time and space our psychedelic mayhem journey will continue with angelina on vocals. brace yourselfes. #whenitsdone #soon"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1600565376702659.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1600565376702659.webp",
+    "picture_alt": "new band member angelina",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2018-03-10 15:01:12",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1600565376702659.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2018-03-10 15:01:12",
+        "dateCreated": "2018-03-10 15:01:12",
+        "articleBody": "good news everyone! from this point on in time and space our psychedelic mayhem journey will continue with angelina on vocals. brace yourselfes. #whenitsdone #soon",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 105,
+    "type": "video",
+    "happened": "2018-04-20 13:46:18",
+    "description": [
+      "my goodness! it's this time of the year again."
+    ],
+    "link_text": "tonerlow on bandcamp",
+    "link": "https://tonerlow.bandcamp.com/album/iii",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1641528929272970.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1641528929272970.webp",
+    "picture_alt": "toner low album 3 cover",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2018-04-20 13:46:18",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1641528929272970.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2018-04-20 13:46:18",
+        "dateCreated": "2018-04-20 13:46:18",
+        "articleBody": "my goodness! it's this time of the year again.",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 106,
+    "type": "status",
+    "happened": "2018-04-20 17:16:19",
+    "description": [
+      "lbw-fun-fact #420 demo was released four years ago"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2018-04-20 17:16:19",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2018-04-20 17:16:19",
+        "dateCreated": "2018-04-20 17:16:19",
+        "articleBody": "lbw-fun-fact #420 demo was released four years ago",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 107,
+    "type": "visual",
+    "happened": "2018-05-01 10:48:23",
+    "description": [],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1651787761580420.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1651787761580420.webp",
+    "picture_alt": "(slow heavy metal music playing)",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2018-05-01 10:48:23",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1651787761580420.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2018-05-01 10:48:23",
+        "dateCreated": "2018-05-01 10:48:23",
+        "articleBody": "",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 108,
+    "type": "visual",
+    "happened": "2018-06-22 20:19:35",
+    "description": [],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1708007235958472.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_1708007235958472.webp",
+    "picture_alt": "band photo",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2018-06-22 20:19:35",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_1708007235958472.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2018-06-22 20:19:35",
+        "dateCreated": "2018-06-22 20:19:35",
+        "articleBody": "",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 109,
+    "type": "status",
+    "happened": "2018-10-17 17:14:52",
+    "description": [
+      "good news everyone! 6.66 years of psychedelic mayhem"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2018-10-17 17:14:52",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2018-10-17 17:14:52",
+        "dateCreated": "2018-10-17 17:14:52",
+        "articleBody": "good news everyone! 6.66 years of psychedelic mayhem",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 110,
+    "type": "visual",
+    "happened": "2019-02-17 17:17:18",
+    "description": [
+      "seems like we had a blast. on to the next seven years of psychedelic mayhem"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_2053007524791773.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/334561739969702_2053007524791773.webp",
+    "picture_alt": "big ass party",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2019-02-17 17:17:18",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/334561739969702_2053007524791773.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2019-02-17 17:17:18",
+        "dateCreated": "2019-02-17 17:17:18",
+        "articleBody": "seems like we had a blast. on to the next seven years of psychedelic mayhem",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 111,
+    "type": "visual",
+    "happened": "2020-02-17 19:35:28",
+    "description": [
+      "good news everyone!  listen to the ep!    also: 8th annniversary!"
+    ],
+    "link_text": "ep on bandcamp",
+    "link": "https://liquidbarbedwire.bandcamp.com/album/ep",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/2724286174330568.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/2724286174330568.webp",
+    "picture_alt": "Liquid Barbed Wire EP cover",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2020-02-17 19:35:28",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/2724286174330568.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2020-02-17 19:35:28",
+        "dateCreated": "2020-02-17 19:35:28",
+        "articleBody": "good news everyone!  listen to the ep!    also: 8th annniversary!",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 112,
+    "type": "visual",
+    "happened": "2020-10-17 09:08:32",
+    "description": [
+      "danke regina. wir <3 dich auch"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/121774853.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/121774853.webp",
+    "picture_alt": "lbw <3",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2020-10-17 09:08:32",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/121774853.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2020-10-17 09:08:32",
+        "dateCreated": "2020-10-17 09:08:32",
+        "articleBody": "danke regina. wir <3 dich auch",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 113,
+    "type": "status",
+    "happened": "2021-02-17 10:46:04",
+    "description": [
+      "good news everyone: another year of psychedelic mayhem accomplished. not so good news: no big ass party at your house this year"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "",
+    "picture_full": "",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2021-02-17 10:46:04",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2021-02-17 10:46:04",
+        "dateCreated": "2021-02-17 10:46:04",
+        "articleBody": "good news everyone: another year of psychedelic mayhem accomplished. not so good news: no big ass party at your house this year",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 114,
+    "type": "visual",
+    "happened": "2021-08-04 19:20:32",
+    "description": [
+      "good news everyone! last rehearsal 08/21/2020. dust this shit off. #fuckyourocd"
+    ],
+    "link_text": "",
+    "link": "",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/234657451_4166569953435509_1152293161899277447.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed_full/234657451_4166569953435509_1152293161899277447.webp",
+    "picture_alt": "dust this shit off",
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Good News everyone! from 2021-08-04 19:20:32",
+        "image": "https://lbweb.fra1.cdn.digitaloceanspaces.com/feed/234657451_4166569953435509_1152293161899277447.webp",
+        "genre": "music group news and updates. psychedelic doom noise",
+        "datePublished": "2021-08-04 19:20:32",
+        "dateCreated": "2021-08-04 19:20:32",
+        "articleBody": "good news everyone! last rehearsal 08/21/2020. dust this shit off. #fuckyourocd",
+        "author": {
+          "@type": "MusicGroup",
+          "@id": "https://liquidbarbedwire.bandcamp.com",
+          "name": "Liquid Barbed Wire",
+          "url": "https://liquidbarbedwire.com"
+        }
+      }
+    ]
+  }
+]

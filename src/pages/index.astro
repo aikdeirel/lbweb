@@ -1,0 +1,100 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import homeData from '../../lbw-data/home.json';
+
+const haiku = [
+    "from the woods we come",
+    "the psychedelic mayhem",
+    "nothing but the void"
+];
+
+---
+
+<Layout title="Home">
+	<div class="home-layout">
+		<div class="content">
+			{homeData.map(item => (
+				<Card 
+					title={item.description[0]}
+					text={Array.isArray(item.description) ? item.description.slice(1).join('<br><br>') : item.description[1]}
+					imageUrl={item.picture_large}
+					link={item.link_intern}
+				/>
+			))}
+		</div>
+		<div class="haiku">
+			{haiku.map(line => (
+				<div class="haiku-line">
+					{line.split('').map(char => (
+						<div class="haiku-char">
+							{char === ' ' ? '\u00A0' : char}
+						</div>
+					))}
+				</div>
+			))}
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.home-layout {
+		display: grid;
+		grid-template-columns: minmax(0, 800px) auto;
+		gap: 4rem;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		padding-top: 3rem;
+	}
+
+	.haiku {
+		display: flex;
+		flex-direction: row;
+		gap: 2rem;
+		padding: 2rem 0;
+		justify-content: flex-end;
+	}
+
+	.haiku-line {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+		min-width: 1.5rem;
+	}
+
+	/* First line - from the woods we come */
+	.haiku-line:nth-child(1) {
+		padding-top: 4rem;
+	}
+
+	/* Second line - the psychedelic mayhem */
+	.haiku-line:nth-child(2) {
+		padding-top: 2rem;
+	}
+
+	.haiku-char {
+		font-size: 1.2rem;
+		line-height: 1;
+	}
+
+	@media (max-width: 768px) {
+		.home-layout {
+			grid-template-columns: 1fr;
+		}
+
+		.haiku {
+			order: -1;
+			flex-direction: row;
+			justify-content: center;
+			padding: 2rem 0;
+		}
+	}
+</style>

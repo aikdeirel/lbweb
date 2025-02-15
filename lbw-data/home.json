@@ -1,0 +1,24 @@
+[
+  {
+    "_id": 1,
+    "description": [
+      "this is Liquid Barbed Wire.",
+      "delivering low fuzz and monotonic soundscapes since 2012."
+    ],
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise_full/demo/cover.webp",
+    "picture_alt": "Liquid Barbed Wire Logo",
+    "link_intern": "/about"
+  },
+  {
+    "_id": 2,
+    "description": [
+      "released our debut EP.",
+      "get it on <a class='underline' target='_blank' rel='noopener' href='https://liquidbarbedwire.bandcamp.com/album/ep' title='Liquid Barbed Wire EP on bandcamp'>bandcamp</a>. (pay what you want)"
+    ],
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/ep/cover.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise_full/ep/cover.webp",
+    "picture_alt": "Liquid Barbed Wire EP cover",
+    "link_intern": "https://liquidbarbedwire.bandcamp.com/album/ep"
+  }
+]

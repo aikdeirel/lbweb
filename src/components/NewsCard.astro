@@ -1,0 +1,226 @@
+---
+interface Props {
+    title?: string;
+    text: string;
+    date: string;
+    picture?: string;
+    picture_full?: string;
+    picture_alt?: string;
+    post_sub?: Array<{
+        picture_large: string;
+        picture_full?: string;
+        picture_alt?: string;
+    }>;
+    type?: 'status' | 'visual' | 'video' | 'link';
+    link?: string;
+    video?: string;
+}
+
+const { title, text, date, picture, picture_full, picture_alt, post_sub, type, link, video } = Astro.props;
+
+function formatDate(dateString: string) {
+    return new Date(dateString).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+}
+---
+
+<div class="news-card">
+    <div class="news-content">
+        <div class="text-content">
+            <div class="date">{formatDate(date)}</div>
+            {title && title !== 'Status Update' && title !== 'Visual' && title !== 'Video' && title !== 'Link' && <h3>{title}</h3>}
+            <p>{text}</p>
+            {link && (
+                <div class="link-container">
+                    <a href={link} target="_blank" rel="noopener noreferrer">View on external site →</a>
+                </div>
+            )}
+        </div>
+        {(type === 'visual' || type === 'video') && picture && (
+            <div class="media-content">
+                <div class="images-grid">
+                    <a href={picture_full || picture} class="image-link">
+                        <img src={picture} alt={picture_alt || text} loading="lazy" />
+                    </a>
+                    {post_sub && post_sub.map(sub => (
+                        <a href={sub.picture_full || sub.picture_large} class="image-link">
+                            <img src={sub.picture_large} alt={sub.picture_alt || text} loading="lazy" />
+                        </a>
+                    ))}
+                </div>
+                {type === 'video' && video && (
+                    <video controls class="video-container">
+                        <source src={video} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                )}
+            </div>
+        )}
+    </div>
+</div>
+
+<style>
+    .news-card {
+        background: transparent;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .news-content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .date {
+        color: var(--accent-color);
+        font-size: var(--font-size-base);
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    h3 {
+        font-size: var(--font-size-xl);
+        margin: 0 0 var(--spacing-sm) 0;
+        line-height: 1.2;
+    }
+    
+    p {
+        font-size: var(--font-size-base);
+        margin: var(--spacing-xs) 0;
+        line-height: 1.6;
+    }
+    
+    .images-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    @media (min-width: 768px) {
+        .news-content {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: var(--spacing-lg);
+        }
+        .text-content {
+            flex: 9;
+        }
+        .media-content {
+            flex: 3;
+            min-width: 200px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .images-grid {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+    }
+    
+    .image-link {
+        display: block;
+    }
+
+    .image-link img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        transition: transform 0.3s ease;
+    }
+
+    .image-link:hover img {
+        transform: scale(1.05);
+    }
+
+    .video-container {
+        width: 100%;
+        margin: 1rem 0;
+        border-radius: 4px;
+    }
+
+    .link-container {
+        margin-top: 1rem;
+    }
+
+    .link-container a {
+        color: var(--text-color);
+        text-decoration: underline;
+    }
+
+    .link-container a:hover {
+        opacity: 0.7;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const imageLinks = document.querySelectorAll('.image-link');
+        imageLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const url = link.getAttribute('href');
+                if (!url) return;
+                
+                history.pushState({}, '', window.location.pathname + '?image=' + encodeURIComponent(url));
+                const fullscreenContainer = document.createElement('div');
+                fullscreenContainer.className = 'fullscreen-container';
+                fullscreenContainer.innerHTML = `
+                    <img src="${url}" alt="" />
+                    <button class="close-button">&times;</button>
+                `;
+                document.body.appendChild(fullscreenContainer);
+                document.body.style.overflow = 'hidden';
+                
+                const closeButton = fullscreenContainer.querySelector('.close-button');
+                if (closeButton) {
+                    closeButton.addEventListener('click', () => {
+                        history.back();
+                    });
+                }
+                
+                window.addEventListener('popstate', () => {
+                    if (fullscreenContainer.parentElement) {
+                        fullscreenContainer.remove();
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+<style is:global>
+    .fullscreen-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    .fullscreen-container img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+    }
+    .close-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .close-button:hover {
+        color: #ccc;
+    }
+</style>

@@ -1,0 +1,306 @@
+[
+  {
+    "_id": 1,
+    "happened": "2014-04-20",
+    "title": "Demo",
+    "description": [
+      "comes in a trippy jewelcase, designed and handnumbered by Liquid Barbed Wire"
+    ],
+    "sold-out": true,
+    "link_intern": "/noise/demo",
+    "link": "https://liquidbarbedwire.bandcamp.com/album/demo",
+    "link_text": "get it on bandcamp",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/demo/cover.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise_full/demo/cover.webp",
+    "picture_alt": "demo cover",
+    "tracks": [
+      {
+        "no": 1,
+        "title": "Immortal",
+        "source": "/noise/demo/Liquid_Barbed_Wire_-_Demo_-_01_Immortal.mp3"
+      },
+      {
+        "no": 2,
+        "title": "Kollaps",
+        "source": "/noise/demo/Liquid_Barbed_Wire_-_Demo_-_02_Kollaps.mp3"
+      },
+      {
+        "no": 3,
+        "title": "Poisoned Spirit",
+        "source": "/noise/demo/Liquid_Barbed_Wire_-_Demo_-_03_Poisoned_Spirit.mp3"
+      }
+    ],
+    "structuredData": [
+      {
+        "@context": "https://schema.org",
+        "@id": "https://musicbrainz.org/release-group/e4b09c4e-2afc-498c-bcbc-73510292629e",
+        "@type": "MusicAlbum",
+        "name": "Demo",
+        "albumReleaseType": "AlbumRelease",
+        "datePublished": "20 Apr 2014 00:00:00 GMT",
+        "copyrightNotice": "Attribution Non Commercial Share Alike",
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "Liquid Barbed Wire",
+          "@id": "https://musicbrainz.org/artist/5663a0bc-cef4-4833-a28f-cc66133f34df"
+        },
+        "albumProductionType": "https://schema.org/DemoAlbum",
+        "image": {
+          "contentUrl": "//coverartarchive.org/release-group/e4b09c4e-2afc-498c-bcbc-73510292629e/front",
+          "@type": "ImageObject",
+          "encodingFormat": "jpg",
+          "representativeOfPage": "True",
+          "thumbnail": [
+            {
+              "contentUrl": "//coverartarchive.org/release-group/e4b09c4e-2afc-498c-bcbc-73510292629e/front",
+              "@type": "ImageObject",
+              "encodingFormat": "jpg"
+            },
+            {
+              "encodingFormat": "jpg",
+              "@type": "ImageObject",
+              "contentUrl": "//coverartarchive.org/release-group/e4b09c4e-2afc-498c-bcbc-73510292629e/front"
+            },
+            {
+              "@type": "ImageObject",
+              "contentUrl": "//coverartarchive.org/release-group/e4b09c4e-2afc-498c-bcbc-73510292629e/front",
+              "encodingFormat": "jpg"
+            }
+          ]
+        },
+        "albumRelease": {
+          "@id": "https://musicbrainz.org/release/7c517111-4e4e-47a5-befa-4b4a829396d2",
+          "duration": "PT45M44S",
+          "@type": [
+            "MusicRelease",
+            "Product"
+          ],
+          "name": "Demo",
+          "musicReleaseFormat": "DigitalFormat",
+          "image": {
+            "contentUrl": "//coverartarchive.org/release-group/e4b09c4e-2afc-498c-bcbc-73510292629e/front",
+            "@type": "ImageObject",
+            "encodingFormat": "jpg",
+            "representativeOfPage": "True",
+            "thumbnail": [
+              {
+                "contentUrl": "//coverartarchive.org/release-group/e4b09c4e-2afc-498c-bcbc-73510292629e/front",
+                "@type": "ImageObject",
+                "encodingFormat": "jpg"
+              },
+              {
+                "encodingFormat": "jpg",
+                "@type": "ImageObject",
+                "contentUrl": "//coverartarchive.org/release-group/e4b09c4e-2afc-498c-bcbc-73510292629e/front"
+              },
+              {
+                "@type": "ImageObject",
+                "contentUrl": "//coverartarchive.org/release-group/e4b09c4e-2afc-498c-bcbc-73510292629e/front",
+                "encodingFormat": "jpg"
+              }
+            ]
+          },
+          "keywords": [
+            "rock",
+            "psychedelic",
+            "instrumental"
+          ],
+          "offers": {
+            "priceCurrency": "EUR",
+            "price": 0.0,
+            "priceValidUntil": "2024-04-20",
+            "additionalProperty": [
+              {
+                "value": 2,
+                "@type": "PropertyValue",
+                "name": "download_pref"
+              },
+              {
+                "value": 1000.0,
+                "@type": "PropertyValue",
+                "name": "max_price"
+              }
+            ],
+            "availability": "OnlineOnly",
+            "@type": "Offer",
+            "priceSpecification": {
+              "minPrice": 0.0
+            },
+            "url": "https://liquidbarbedwire.bandcamp.com/album/demo#a921184568-buy"
+          },
+          "description": "Demo by Liquid Barbed Wire, released 20 April 2014\r\nMike: Drums\r\nTobe: Bass\r\nKai: Guitar",
+          "track": [
+            {
+              "@id": "http://musicbrainz.org/recording/5b30efd5-2f9a-4043-8546-2c56e8fa93f0",
+              "@type": "MusicRecording",
+              "position": "1",
+              "name": "Immortal",
+              "duration": "PT21M10S"
+            },
+            {
+              "@id": "http://musicbrainz.org/recording/26d664a2-ecd2-44d3-8115-7e54bc95a7f6",
+              "@type": "MusicRecording",
+              "position": "2",
+              "name": "Kollaps",
+              "duration": "PT03M25S"
+            },
+            {
+              "@id": "http://musicbrainz.org/recording/91d7b3dd-9e84-4f72-a0e8-e9fa2f292983",
+              "@type": "MusicRecording",
+              "position": "3",
+              "name": "Poisoned Spirit",
+              "duration": "PT21M09S"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2,
+    "happened": "2020-02-17",
+    "title": "EP",
+    "description": [
+      "recorded in the shack. mixed and mastered in the woods. enjoy the psychedelic mayhem"
+    ],
+    "sold-out": false,
+    "link_intern": "/noise/ep",
+    "link": "https://liquidbarbedwire.bandcamp.com/album/ep",
+    "link_text": "get it on bandcamp",
+    "picture_large": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise/ep/cover.webp",
+    "picture_full": "https://lbweb.fra1.cdn.digitaloceanspaces.com/noise_full/ep/cover.webp",
+    "picture_alt": "ep cover",
+    "tracks": [
+      {
+        "no": 1,
+        "title": "Earthnut",
+        "source": "/noise/ep/Liquid_Barbed_Wire_-_EP_-_01_Earthnut.mp3"
+      },
+      {
+        "no": 2,
+        "title": "Wide Bright Orb",
+        "source": "/noise/ep/Liquid_Barbed_Wire_-_EP_-_02_Wide_Bright_Orb.mp3"
+      }
+    ],
+    "structuredData": [
+      {
+        "@context": "http://schema.org",
+        "@id": "http://musicbrainz.org/release-group/1bbe179d-b144-4a98-8bb7-e8d22cbfda6f",
+        "@type": "MusicAlbum",
+        "name": "EP",
+        "albumReleaseType": "AlbumRelease",
+        "albumProductionType": "http://schema.org/StudioAlbum",
+        "datePublished": "17 Feb 2020 00:00:00 GMT",
+        "copyrightNotice": "Attribution Non Commercial Share Alike",
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "Liquid Barbed Wire",
+          "@id": "https://musicbrainz.org/artist/5663a0bc-cef4-4833-a28f-cc66133f34df"
+        },
+        "image": {
+          "thumbnail": [
+            {
+              "contentUrl": "//coverartarchive.org/release/1ca63356-f00b-4a79-a7f2-d57a4717a059/30632675582-250.jpg",
+              "encodingFormat": "jpg",
+              "@type": "ImageObject"
+            },
+            {
+              "encodingFormat": "jpg",
+              "contentUrl": "//coverartarchive.org/release/1ca63356-f00b-4a79-a7f2-d57a4717a059/30632675582-500.jpg",
+              "@type": "ImageObject"
+            },
+            {
+              "encodingFormat": "jpg",
+              "contentUrl": "//coverartarchive.org/release/1ca63356-f00b-4a79-a7f2-d57a4717a059/30632675582-1200.jpg",
+              "@type": "ImageObject"
+            }
+          ],
+          "encodingFormat": "jpg",
+          "contentUrl": "//coverartarchive.org/release/1ca63356-f00b-4a79-a7f2-d57a4717a059/30632675582.jpg",
+          "@type": "ImageObject",
+          "representativeOfPage": "True"
+        },
+        "albumRelease": {
+          "@id": "http://musicbrainz.org/release/1ca63356-f00b-4a79-a7f2-d57a4717a059",
+          "duration": "PT45M34S",
+          "@type": [
+            "MusicRelease",
+            "Product"
+          ],
+          "name": "EP",
+          "musicReleaseFormat": "DigitalFormat",
+          "image": {
+            "thumbnail": [
+              {
+                "contentUrl": "//coverartarchive.org/release/1ca63356-f00b-4a79-a7f2-d57a4717a059/30632675582-250.jpg",
+                "encodingFormat": "jpg",
+                "@type": "ImageObject"
+              },
+              {
+                "encodingFormat": "jpg",
+                "contentUrl": "//coverartarchive.org/release/1ca63356-f00b-4a79-a7f2-d57a4717a059/30632675582-500.jpg",
+                "@type": "ImageObject"
+              },
+              {
+                "encodingFormat": "jpg",
+                "contentUrl": "//coverartarchive.org/release/1ca63356-f00b-4a79-a7f2-d57a4717a059/30632675582-1200.jpg",
+                "@type": "ImageObject"
+              }
+            ],
+            "encodingFormat": "jpg",
+            "contentUrl": "//coverartarchive.org/release/1ca63356-f00b-4a79-a7f2-d57a4717a059/30632675582.jpg",
+            "@type": "ImageObject",
+            "representativeOfPage": "True"
+          },
+          "keywords": [
+            "rock",
+            "psychedelic",
+            "doom",
+            "noise",
+            "instrumental"
+          ],
+          "offers": {
+            "priceCurrency": "EUR",
+            "price": 0.0,
+            "priceValidUntil": "2024-04-20",
+            "additionalProperty": [
+              {
+                "value": 2,
+                "@type": "PropertyValue",
+                "name": "download_pref"
+              },
+              {
+                "value": 1000.0,
+                "@type": "PropertyValue",
+                "name": "max_price"
+              }
+            ],
+            "availability": "OnlineOnly",
+            "@type": "Offer",
+            "priceSpecification": {
+              "minPrice": 0.0
+            },
+            "url": "https://liquidbarbedwire.bandcamp.com/album/ep#a626625302-buy"
+          },
+          "description": "EP by Liquid Barbed Wire, released 17 February 2020\r\n1. Earthnut\r\n2. Wide Bright Orb\r\nRecorded in the shack.\r\nMixed and mastered in the woods.\r\nEnjoy the psychedelic mayhem.\r\nMike: Synths\r\nTobe: Drums\r\nAngelina: Guitar\r\nKai: Bass",
+          "track": [
+            {
+              "@type": "MusicRecording",
+              "@id": "http://musicbrainz.org/recording/71c712d0-1558-4c1c-b801-48fed68710fc",
+              "name": "Earthnut",
+              "position": "1",
+              "duration": "PT24M30S"
+            },
+            {
+              "name": "Wide Bright Orb",
+              "@type": "MusicRecording",
+              "@id": "http://musicbrainz.org/recording/b38577b7-7f9b-459e-877e-3d10a9a425c2",
+              "position": "2",
+              "duration": "PT21M04S"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

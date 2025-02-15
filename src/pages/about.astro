@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import aboutData from '../../lbw-data/about.json';
+---
+
+<Layout title="About">
+	<section>
+		<h1>from the woods we come</h1>
+		<p class="subtitle">a four-piece psychedelic doom noise band, dancing on the razor's edge between technological advancements and beer. every piece we play is a result of our individual beings forming a temporary whole.</p>
+
+		<div class="card-grid">
+			{aboutData.map(item => (
+				<Card 
+					title={item.happened || ''}
+					text={Array.isArray(item.description) ? item.description.join('<br><br>') : item.description}
+					imageUrl={item.picture_large}
+				/>
+			))}
+		</div>
+	</section>
+</Layout>
+
+<style>
+	section {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: var(--spacing-md) var(--spacing-sm);
+	}
+
+	h1 {
+		font-size: var(--font-size-2xl);
+		margin-bottom: var(--spacing-xs);
+		color: var(--accent-color);
+		line-height: 1.2;
+	}
+
+	.subtitle {
+		font-size: var(--font-size-lg);
+		margin-bottom: var(--spacing-lg);
+		opacity: 0.8;
+		max-width: 800px;
+		line-height: 1.6;
+	}
+
+	.card-grid {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-lg);
+	}
+</style>

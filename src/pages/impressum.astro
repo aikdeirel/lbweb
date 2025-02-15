@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro';
+import impressumData from '../../lbw-data/impressum.json';
+
+// List of headings that should get the heading class
+const headings = ["Betreiber", "Für den Inhalt verantwortlich", "Haftungshinweis", "Datenschutz", "Privacy"];
+---
+
+<Layout title="Impressum">
+	<section>
+		<div class="content">
+			{impressumData[0].description.map(line => (
+				<Fragment>
+					{line === '' ? <br /> : <p class={headings.includes(line) ? 'heading' : ''} set:html={line} />}
+				</Fragment>
+			))}
+		</div>
+	</section>
+</Layout>
+
+<style>
+	section {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.content {
+		line-height: 1.6;
+	}
+
+	.content p {
+		margin: 0;
+	}
+
+	.content p.heading {
+		font-weight: bold;
+		font-size: 1.2em;
+		margin-top: 0.75rem;
+		margin-bottom: 0;
+	}
+
+	.content p.text {
+		margin-bottom: 0.15rem;
+	}
+
+	.content :global(a) {
+		color: var(--accent-color);
+		text-decoration: none;
+	}
+
+	.content :global(a:hover) {
+		text-decoration: underline;
+	}
+</style>
