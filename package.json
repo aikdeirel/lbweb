@@ -1,5 +1,6 @@
 {
-  "name": "",
+  "name": "liquid-barbed-wire-website",
+  "description": "Official website for the Liquid Barbed Wire music project.",
   "type": "module",
   "version": "0.0.1",
   "engines": {
