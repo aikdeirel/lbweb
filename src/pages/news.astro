@@ -1,82 +1,46 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import NewsCard from '../components/NewsCard.astro';
+import Pagination from '../components/Pagination.astro';
 import newsData from '../../lbw-data/news.json';
+import { validatePageParam, calculatePagination, shouldRedirectToFirstPage } from '../utils/pagination';
+import { sortByDateDescending } from '../utils/date';
+import type { NewsType, NewsItem } from '../types/news';
 
-// Define the allowed news types
-type NewsType = 'status' | 'visual' | 'video' | 'link';
-
-// Type check the news data
+// Type check and sort the news data
 const typedNewsData = newsData.map(news => ({
     ...news,
     type: news.type as NewsType
-}));
+})) as NewsItem[];
 
-// Get the raw page parameter
+const sortedNewsData = sortByDateDescending(typedNewsData);
+
+const PAGE_SIZE = 10;
 const pageParam = Astro.url.searchParams.get('page');
 
-// Check for invalid page parameter
-if (pageParam !== null) {
-  const parsed = parseInt(pageParam);
-  if (isNaN(parsed) || parsed < 1) {
-    return new Response(`
-      <html>
-        <head>
-          <title>404 - Bad news everyone!</title>
-          <style>
-            body {
-              background: #111;
-              color: #fff;
-              font-family: monospace;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              height: 100vh;
-              margin: 0;
-              text-align: center;
-            }
-            h1 { color: #ff4444; }
-            a { color: #fff; text-decoration: underline; }
-            a:hover { opacity: 0.7; }
-          </style>
-        </head>
-        <body>
-          <h1>Bad news everyone!</h1>
-          <p>The news seem to have fallen into a black hole.</p>
-          <p><a href="/news">Go back to the news</a>.</p>
-        </body>
-      </html>
-    `, {
-      status: 404,
-      headers: {
-        'Content-Type': 'text/html',
-      },
-    });
-  }
+// Validate page parameter - this will throw an error for invalid params
+// which will be caught by Astro's 404 handling
+let currentPage: number;
+try {
+    currentPage = validatePageParam(pageParam);
+} catch (error) {
+    return Astro.redirect('/404');
 }
 
-const currentPage = pageParam ? Math.max(1, parseInt(pageParam)) : 1;
-const PAGE_SIZE = 10;
+// Calculate pagination
+const pagination = calculatePagination({
+    currentPage,
+    totalItems: sortedNewsData.length,
+    pageSize: PAGE_SIZE
+});
 
-// Create a fresh copy of the data and sort it
-const sortedNewsData = [...typedNewsData].sort((a, b) => 
-  new Date(b.happened).getTime() - new Date(a.happened).getTime()
-);
-
-// Calculate pagination values
-const totalPages = Math.ceil(sortedNewsData.length / PAGE_SIZE);
-const validPage = Math.min(currentPage, totalPages); // Ensure page doesn't exceed total
-const start = (validPage - 1) * PAGE_SIZE;
-const end = Math.min(start + PAGE_SIZE, sortedNewsData.length);
+// Redirect if page is out of bounds
+if (shouldRedirectToFirstPage(currentPage, pagination.totalPages)) {
+    return Astro.redirect('/news?page=1');
+}
 
 // Get only the news for current page
-const currentNews = sortedNewsData.slice(start, end);
-
-// Redirect if invalid page was requested
-if (currentPage > totalPages) {
-  return Astro.redirect('/news?page=1');
-}
+const currentNews = sortedNewsData.slice(pagination.startIndex, pagination.endIndex);
 ---
 
 <Layout title="News">
@@ -101,16 +65,11 @@ if (currentPage > totalPages) {
 			))}
 		</div>
 
-		{totalPages > 1 && (
-			<div class="pagination">
-				{validPage > 1 && (
-					<a href={`/news?page=${validPage - 1}`} class="prev">← Previous</a>
-				)}
-				{validPage < totalPages && (
-					<a href={`/news?page=${validPage + 1}`} class="next">Next →</a>
-				)}
-			</div>
-		)}
+		<Pagination 
+			currentPage={pagination.currentPage}
+			totalPages={pagination.totalPages}
+			basePath="/news"
+		/>
 	</section>
 </Layout>
 
@@ -142,21 +101,5 @@ if (currentPage > totalPages) {
 		gap: var(--spacing-lg);
 	}
 
-	.pagination {
-		display: flex;
-		justify-content: space-between;
-		margin-top: var(--spacing-lg);
-		padding: var(--spacing-md) 0;
-		border-top: 1px solid var(--text-color);
-	}
 
-	.pagination a {
-		color: var(--text-color);
-		text-decoration: none;
-		font-size: var(--font-size-lg);
-	}
-
-	.pagination a:hover {
-		text-decoration: underline;
-	}
 </style>

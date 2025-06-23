@@ -1,0 +1,158 @@
+---
+// This component provides global fullscreen image functionality
+// Include it once in Layout.astro for site-wide use
+---
+
+<script>
+function initializeFullscreenImages() {
+    const imageLinks = document.querySelectorAll('.image-link');
+    
+    imageLinks.forEach(link => {
+        // Remove any existing listeners to prevent duplicates
+        link.removeEventListener('click', handleImageClick);
+        link.addEventListener('click', handleImageClick);
+    });
+}
+
+function handleImageClick(e: Event) {
+    e.preventDefault();
+    const link = e.currentTarget as HTMLAnchorElement;
+    const url = link.getAttribute('href');
+    if (!url) return;
+    
+    // Update browser history
+    const currentUrl = new URL(window.location.href);
+    currentUrl.searchParams.set('image', url);
+    history.pushState({}, '', currentUrl.toString());
+    
+    // Create fullscreen container
+    const fullscreenContainer = document.createElement('div');
+    fullscreenContainer.className = 'fullscreen-container';
+    fullscreenContainer.innerHTML = `
+        <img src="${url}" alt="" />
+        <button class="close-button" aria-label="Close fullscreen image">&times;</button>
+    `;
+    
+    document.body.appendChild(fullscreenContainer);
+    document.body.style.overflow = 'hidden';
+    
+    // Add close functionality
+    const closeButton = fullscreenContainer.querySelector('.close-button');
+    closeButton?.addEventListener('click', closeFullscreen);
+    
+    // Close on escape key
+    document.addEventListener('keydown', handleEscapeKey);
+    
+    // Close on background click
+    fullscreenContainer.addEventListener('click', (e) => {
+        if (e.target === fullscreenContainer) {
+            closeFullscreen();
+        }
+    });
+}
+
+function closeFullscreen() {
+    // Remove image parameter from URL
+    const currentUrl = new URL(window.location.href);
+    currentUrl.searchParams.delete('image');
+    history.replaceState({}, '', currentUrl.toString());
+    
+    // Remove fullscreen container
+    const container = document.querySelector('.fullscreen-container');
+    if (container) {
+        container.remove();
+        document.body.style.overflow = '';
+    }
+    
+    // Remove escape key listener
+    document.removeEventListener('keydown', handleEscapeKey);
+}
+
+function handleEscapeKey(e: KeyboardEvent) {
+    if (e.key === 'Escape') {
+        closeFullscreen();
+    }
+}
+
+// Handle browser back/forward
+window.addEventListener('popstate', () => {
+    const container = document.querySelector('.fullscreen-container');
+    if (container) {
+        container.remove();
+        document.body.style.overflow = '';
+        document.removeEventListener('keydown', handleEscapeKey);
+    }
+});
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', initializeFullscreenImages);
+
+// Re-initialize when new content is added (for dynamic content)
+window.addEventListener('contentloaded', initializeFullscreenImages);
+
+// Export for manual initialization if needed
+(window as any).initializeFullscreenImages = initializeFullscreenImages;
+</script>
+
+<style is:global>
+    .fullscreen-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        backdrop-filter: blur(5px);
+    }
+
+    .fullscreen-container img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+        border-radius: 4px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    }
+
+    .close-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        border: 2px solid var(--text-color);
+        border-radius: 50%;
+        color: var(--text-color);
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .close-button:hover {
+        background: rgba(0, 0, 0, 0.9);
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+        .close-button {
+            top: 10px;
+            right: 10px;
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+        }
+        
+        .fullscreen-container img {
+            max-width: 95%;
+            max-height: 95%;
+        }
+    }
+</style>
