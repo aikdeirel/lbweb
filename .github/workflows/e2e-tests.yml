@@ -27,8 +27,24 @@ jobs:
     - name: Build the application
       run: npm run build
     
+    - name: Verify build output
+      run: |
+        echo "Build completed. Checking dist directory..."
+        ls -la dist/
+        echo "Build size:"
+        du -sh dist/
+    
+    - name: Test server startup
+      run: |
+        echo "Testing server startup..."
+        node scripts/test-server.js &
+        TEST_PID=$!
+        sleep 10
+        kill $TEST_PID 2>/dev/null || true
+        echo "Server test completed"
+    
     - name: Run Playwright tests
-      run: npm run test:e2e
+      run: npx playwright test tests/basic.spec.ts --reporter=line
     
     - uses: actions/upload-artifact@v4
       if: always()

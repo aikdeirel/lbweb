@@ -14,7 +14,8 @@
     "astro": "astro",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
-    "test:install": "playwright install"
+    "test:install": "playwright install",
+    "test:server": "node scripts/test-server.js"
   },
   "dependencies": {
     "@astrojs/node": "^9.1.0",
