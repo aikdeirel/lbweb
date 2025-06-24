@@ -46,6 +46,8 @@ const { title, text, date, picture, picture_full, picture_alt, post_sub, type, l
     .news-card {
         background: transparent;
         margin-bottom: var(--spacing-lg);
+        max-width: 100%;
+        overflow-wrap: break-word;
     }
     
     .news-content {
@@ -54,22 +56,34 @@ const { title, text, date, picture, picture_full, picture_alt, post_sub, type, l
         gap: var(--spacing-md);
     }
     
+    .text-content {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+    
     .date {
         color: var(--accent-color);
         font-size: var(--font-size-base);
         margin-bottom: var(--spacing-xs);
+        overflow-wrap: break-word;
+        word-break: break-word;
     }
     
     h3 {
         font-size: var(--font-size-xl);
         margin: 0 0 var(--spacing-sm) 0;
         line-height: 1.2;
+        overflow-wrap: break-word;
+        word-break: break-word;
     }
     
     p {
         font-size: var(--font-size-base);
         margin: var(--spacing-xs) 0;
         line-height: 1.6;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        max-width: 100%;
     }
     
     .images-grid {
@@ -122,11 +136,18 @@ const { title, text, date, picture, picture_full, picture_alt, post_sub, type, l
 
     .link-container {
         margin-top: 1rem;
+        max-width: 100%;
+        overflow-wrap: break-word;
     }
 
     .link-container a {
         color: var(--text-color);
         text-decoration: underline;
+        overflow-wrap: break-word;
+        word-break: break-all;
+        hyphens: auto;
+        display: inline-block;
+        max-width: 100%;
     }
 
     .link-container a:hover {

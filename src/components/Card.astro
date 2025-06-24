@@ -27,6 +27,8 @@ const { title, text, imageUrl, link } = Astro.props;
         position: relative;
         background: transparent;
         margin-bottom: var(--spacing-lg);
+        max-width: 100%;
+        overflow-wrap: break-word;
     }
 
     .card-content {
@@ -35,16 +37,33 @@ const { title, text, imageUrl, link } = Astro.props;
         gap: var(--spacing-md);
     }
 
+    .text-content {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
     .text-content h3 {
         font-size: var(--font-size-xl);
         margin: 0 0 var(--spacing-sm) 0;
         line-height: 1.2;
+        overflow-wrap: break-word;
+        word-break: break-word;
     }
 
     .text-content p {
         font-size: var(--font-size-base);
         margin: 0;
         line-height: 1.6;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        max-width: 100%;
+    }
+
+    /* Handle long URLs and links in text content */
+    .text-content p :global(a) {
+        overflow-wrap: break-word;
+        word-break: break-all;
+        hyphens: auto;
     }
 
     .image-content img {
