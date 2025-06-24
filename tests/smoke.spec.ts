@@ -16,29 +16,35 @@ test.describe('Smoke Tests - Basic Page Loading', () => {
   // Test that each page loads successfully
   for (const page of pages) {
     test(`${page.name} loads successfully`, async ({ page: browserPage }) => {
-      const response = await browserPage.goto(page.path);
-      
-      // Check that the page loaded successfully
-      expect(response?.status()).toBe(200);
-      
-      // Check that the page has content (not empty)
-      const bodyText = await browserPage.textContent('body');
-      expect(bodyText).toBeTruthy();
-      expect(bodyText!.length).toBeGreaterThan(10);
-      
-      // Check that there are no JavaScript errors
+      // Set up console error listener BEFORE navigation
       const logs: string[] = [];
-      browserPage.on('console', msg => {
+      const errorHandler = (msg: any) => {
         if (msg.type() === 'error') {
           logs.push(msg.text());
         }
-      });
+      };
+      browserPage.on('console', errorHandler);
       
-      // Wait a moment for any async operations
-      await browserPage.waitForTimeout(1000);
-      
-      // No JavaScript errors should be present
-      expect(logs).toEqual([]);
+      try {
+        const response = await browserPage.goto(page.path);
+        
+        // Check that the page loaded successfully
+        expect(response?.status()).toBe(200);
+        
+        // Check that the page has content (not empty)
+        const bodyText = await browserPage.textContent('body');
+        expect(bodyText).toBeTruthy();
+        expect(bodyText!.length).toBeGreaterThan(10);
+        
+        // Wait a moment for any async operations
+        await browserPage.waitForTimeout(1000);
+        
+        // No JavaScript errors should be present
+        expect(logs).toEqual([]);
+      } finally {
+        // Clean up the event listener
+        browserPage.off('console', errorHandler);
+      }
     });
   }
 

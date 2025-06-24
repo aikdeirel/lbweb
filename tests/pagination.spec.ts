@@ -70,34 +70,42 @@ test.describe('Pagination Tests', () => {
     const paginatedPages = ['/news', '/visual'];
     
     for (const pagePath of paginatedPages) {
-      await page.goto(pagePath);
+      // Set up console error listener BEFORE any navigation
+      const errors: string[] = [];
+      const errorHandler = (msg: any) => {
+        if (msg.type() === 'error') {
+          errors.push(msg.text());
+        }
+      };
+      page.on('console', errorHandler);
       
-      // Look for any pagination controls
-      const paginationControls = page.locator('a[href*="page="], a:has-text("Next"), a:has-text("Previous"), .pagination a');
-      
-      if (await paginationControls.count() > 0) {
-        // Click on any pagination link
-        const firstPaginationLink = paginationControls.first();
-        await firstPaginationLink.click();
-        await page.waitForLoadState('networkidle');
+      try {
+        await page.goto(pagePath);
         
-        // Verify the page still works
-        expect(page.url()).toContain(pagePath.replace('/', ''));
+        // Look for any pagination controls
+        const paginationControls = page.locator('a[href*="page="], a:has-text("Next"), a:has-text("Previous"), .pagination a');
         
-        // Verify page has content
-        const bodyText = await page.textContent('body');
-        expect(bodyText).toBeTruthy();
-        
-        // Verify no JavaScript errors
-        const errors: string[] = [];
-        page.on('console', msg => {
-          if (msg.type() === 'error') {
-            errors.push(msg.text());
-          }
-        });
-        
-        await page.waitForTimeout(1000);
-        expect(errors).toEqual([]);
+        if (await paginationControls.count() > 0) {
+          // Click on any pagination link
+          const firstPaginationLink = paginationControls.first();
+          await firstPaginationLink.click();
+          await page.waitForLoadState('networkidle');
+          
+          // Verify the page still works
+          expect(page.url()).toContain(pagePath.replace('/', ''));
+          
+          // Verify page has content
+          const bodyText = await page.textContent('body');
+          expect(bodyText).toBeTruthy();
+          
+          await page.waitForTimeout(1000);
+          
+          // Verify no JavaScript errors occurred during the entire flow
+          expect(errors).toEqual([]);
+        }
+      } finally {
+        // Clean up the event listener to prevent memory leaks
+        page.off('console', errorHandler);
       }
     }
   });
