@@ -10,8 +10,6 @@ test.describe('Basic Functionality', () => {
     // Check that the page has some content
     const body = page.locator('body');
     await expect(body).toBeVisible();
-    
-    console.log('✅ Homepage loaded successfully');
   });
 
   test('about page loads', async ({ page }) => {
@@ -23,7 +21,5 @@ test.describe('Basic Functionality', () => {
     // Check that the page has content
     const body = page.locator('body');
     await expect(body).toBeVisible();
-    
-    console.log('✅ About page loaded successfully');
   });
 });

@@ -2,6 +2,7 @@
 
 import { spawn } from 'child_process';
 import { setTimeout } from 'timers/promises';
+import { fileURLToPath } from 'url';
 
 const MAX_WAIT_TIME = 120000; // 2 minutes
 const CHECK_INTERVAL = 1000; // 1 second
@@ -51,7 +52,7 @@ async function startServerAndWait() {
 }
 
 // If script is run directly
-if (process.argv[1] === new URL(import.meta.url).pathname) {
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
   try {
     const server = await startServerAndWait();
     console.log('Server started successfully. Press Ctrl+C to stop.');
