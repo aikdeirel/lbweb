@@ -100,8 +100,9 @@ test.describe('Pagination Tests', () => {
         await firstPaginationLink.click();
         await page.waitForLoadState('domcontentloaded'); // Changed from networkidle to domcontentloaded
         
-        // Verify the page still works
-        expect(page.url()).toContain(pagePath.replace('/', ''));
+        // Verify the page still works - ensure we're still on the same page section
+        const expectedPathSegment = pagePath === '/' ? '/' : pagePath.replace(/^\//, '');
+        expect(page.url()).toContain(expectedPathSegment);
         
         // Verify page has content
         const bodyText = await page.textContent('body');
