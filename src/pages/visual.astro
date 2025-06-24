@@ -1,23 +1,43 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Pagination from '../components/Pagination.astro';
 import newsData from '../../lbw-data/news.json';
+import { validatePageParam, calculatePagination, shouldRedirectToFirstPage } from '../utils/pagination';
+import { sortByDateDescending } from '../utils/date';
+import type { NewsItem } from '../types/news';
 
-// Filter news data for items with picture_large and sort by date in descending order
-const visualData = newsData
-    .filter(item => item.picture_large)
-    .sort((a, b) => new Date(b.happened).getTime() - new Date(a.happened).getTime());
+// Filter news data for items with picture_large and sort by date
+const typedNewsData = newsData as NewsItem[];
+const visualData = sortByDateDescending(
+    typedNewsData.filter(item => item.picture_large)
+);
 
 const PAGE_SIZE = 15; // 3 columns × 5 rows
-const currentPage = Number(Astro.url.searchParams.get('page') || '1');
-const start = (currentPage - 1) * PAGE_SIZE;
-const end = start + PAGE_SIZE;
-const totalPages = Math.ceil(visualData.length / PAGE_SIZE);
-const currentImages = visualData.slice(start, end);
+const pageParam = Astro.url.searchParams.get('page');
 
-// Redirect if invalid page was requested
-if (currentPage > totalPages && visualData.length > 0) {
+// Validate page parameter - this will throw an error for invalid params
+// which will be caught by Astro's 404 handling
+let currentPage: number;
+try {
+    currentPage = validatePageParam(pageParam);
+} catch (error) {
+    return Astro.redirect('/404');
+}
+
+// Calculate pagination
+const pagination = calculatePagination({
+    currentPage,
+    totalItems: visualData.length,
+    pageSize: PAGE_SIZE
+});
+
+// Redirect if page is out of bounds
+if (shouldRedirectToFirstPage(currentPage, pagination.totalPages)) {
     return Astro.redirect('/visual?page=1');
 }
+
+// Get only the images for current page
+const currentImages = visualData.slice(pagination.startIndex, pagination.endIndex);
 ---
 
 <Layout title="Visual">
@@ -32,17 +52,12 @@ if (currentPage > totalPages && visualData.length > 0) {
 			))}
 		</div>
 
-		{totalPages > 1 && (
-			<div class="pagination">
-				{currentPage > 1 && (
-					<a href={`/visual?page=${currentPage - 1}`}>Previous</a>
-				)}
-				<span>Page {currentPage} of {totalPages}</span>
-				{currentPage < totalPages && (
-					<a href={`/visual?page=${currentPage + 1}`}>Next</a>
-				)}
-			</div>
-		)}
+		<Pagination 
+			currentPage={pagination.currentPage}
+			totalPages={pagination.totalPages}
+			basePath="/visual"
+			showPageInfo={true}
+		/>
 	</section>
 </Layout>
 
@@ -85,23 +100,7 @@ if (currentPage > totalPages && visualData.length > 0) {
 		transform: scale(1.05);
 	}
 
-	.pagination {
-		margin-top: 2rem;
-		display: flex;
-		justify-content: center;
-		gap: 1rem;
-		align-items: center;
-	}
 
-	.pagination a {
-		color: var(--text-color);
-		text-decoration: underline;
-		padding: 0.5rem 1rem;
-	}
-
-	.pagination a:hover {
-		opacity: 0.7;
-	}
 
 	@media (max-width: 768px) {
 		.image-grid {
@@ -117,76 +116,3 @@ if (currentPage > totalPages && visualData.length > 0) {
 	}
 </style>
 
-<script>
-	document.addEventListener('DOMContentLoaded', () => {
-		const imageLinks = document.querySelectorAll('.image-link');
-		imageLinks.forEach(link => {
-			link.addEventListener('click', (e) => {
-				e.preventDefault();
-				const url = link.getAttribute('href');
-				if (!url) return;
-				
-				history.pushState({}, '', window.location.pathname + '?image=' + encodeURIComponent(url));
-				const fullscreenContainer = document.createElement('div');
-				fullscreenContainer.className = 'fullscreen-container';
-				fullscreenContainer.innerHTML = `
-					<img src="${url}" alt="" />
-					<button class="close-button">&times;</button>
-				`;
-				document.body.appendChild(fullscreenContainer);
-				document.body.style.overflow = 'hidden';
-
-				const closeButton = fullscreenContainer.querySelector('.close-button');
-				if (closeButton) {
-					closeButton.addEventListener('click', () => {
-						history.back();
-					});
-				}
-
-				window.addEventListener('popstate', () => {
-					if (fullscreenContainer.parentElement) {
-						fullscreenContainer.remove();
-						document.body.style.overflow = '';
-					}
-				});
-			});
-		});
-	});
-</script>
-
-<style is:global>
-	.fullscreen-container {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0, 0, 0, 0.9);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		z-index: 1000;
-	}
-
-	.fullscreen-container img {
-		max-width: 90%;
-		max-height: 90%;
-		object-fit: contain;
-	}
-
-	.close-button {
-		position: absolute;
-		top: 20px;
-		right: 20px;
-		background: none;
-		border: none;
-		color: white;
-		font-size: 2rem;
-		cursor: pointer;
-		padding: 10px;
-	}
-
-	.close-button:hover {
-		color: #ccc;
-	}
-</style>

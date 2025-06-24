@@ -1,4 +1,6 @@
 ---
+import FullscreenImage from '../components/FullscreenImage.astro';
+
 interface Props {
 	title: string;
 }
@@ -48,6 +50,7 @@ const fullPath = searchParams ? `${pathname}?${searchParams}` : pathname;
 		</main>
 		<footer>
 		</footer>
+		<FullscreenImage />
 	</body>
 </html>
 
