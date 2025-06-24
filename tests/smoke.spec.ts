@@ -80,7 +80,16 @@ test.describe('Smoke Tests - Basic Page Loading', () => {
     const response = await request.get('/api/news');
     expect(response.status()).toBe(200);
     
+    // Verify response content type
+    expect(response.headers()['content-type']).toContain('application/json');
+    
     const data = await response.json();
     expect(data).toBeDefined();
+    
+    // Verify expected structure
+    expect(data).toHaveProperty('news');
+    expect(data).toHaveProperty('total');
+    expect(data).toHaveProperty('page');
+    expect(Array.isArray(data.news)).toBe(true);
   });
 });
