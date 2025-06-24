@@ -17,6 +17,11 @@ export const GET: APIRoute = async ({ url }) => {
       news: sortedNews.slice(start, end),
       total: Math.ceil(sortedNews.length / PAGE_SIZE),
       page
-    })
+    }),
+    {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }
   );
 };
