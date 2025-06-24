@@ -23,7 +23,9 @@ test.describe('Pagination Tests', () => {
         // Page should still have content
         const bodyText = await page.textContent('body');
         expect(bodyText).toBeTruthy();
-        expect(bodyText!.length).toBeGreaterThan(10);
+        if (bodyText) {
+          expect(bodyText.length).toBeGreaterThan(10);
+        }
         
         // Check if previous/back navigation exists
         const prevButton = page.locator('a:has-text("Previous"), a:has-text("«"), a:has-text("Back")').first();
@@ -61,73 +63,87 @@ test.describe('Pagination Tests', () => {
         // Page should still have content
         const bodyText = await page.textContent('body');
         expect(bodyText).toBeTruthy();
-        expect(bodyText!.length).toBeGreaterThan(10);
+        if (bodyText) {
+          expect(bodyText.length).toBeGreaterThan(10);
+        }
       }
     }
   });
 
-  test('pagination preserves page functionality', async ({ page }) => {
-    const paginatedPages = ['/news', '/visual'];
+  // Helper function for testing pagination functionality
+  async function testPaginationFunctionality(page: any, pagePath: string) {
+    // Set up console error listener BEFORE any navigation
+    const errors: string[] = [];
+    const errorHandler = (msg: { type: () => string; text: () => string }) => {
+      if (msg.type() === 'error') {
+        errors.push(msg.text());
+      }
+    };
+    page.on('console', errorHandler);
     
-    for (const pagePath of paginatedPages) {
-      // Set up console error listener BEFORE any navigation
-      const errors: string[] = [];
-      const errorHandler = (msg: any) => {
-        if (msg.type() === 'error') {
-          errors.push(msg.text());
-        }
-      };
-      page.on('console', errorHandler);
+    try {
+      await page.goto(pagePath);
       
-      try {
-        await page.goto(pagePath);
+      // Look for any pagination controls
+      const paginationControls = page.locator('a[href*="page="], a:has-text("Next"), a:has-text("Previous"), .pagination a');
+      
+      if (await paginationControls.count() > 0) {
+        // Click on any pagination link
+        const firstPaginationLink = paginationControls.first();
+        await firstPaginationLink.click();
+        await page.waitForLoadState('networkidle');
         
-        // Look for any pagination controls
-        const paginationControls = page.locator('a[href*="page="], a:has-text("Next"), a:has-text("Previous"), .pagination a');
+        // Verify the page still works
+        expect(page.url()).toContain(pagePath.replace('/', ''));
         
-        if (await paginationControls.count() > 0) {
-          // Click on any pagination link
-          const firstPaginationLink = paginationControls.first();
-          await firstPaginationLink.click();
-          await page.waitForLoadState('networkidle');
-          
-          // Verify the page still works
-          expect(page.url()).toContain(pagePath.replace('/', ''));
-          
-          // Verify page has content
-          const bodyText = await page.textContent('body');
-          expect(bodyText).toBeTruthy();
-          
-          await page.waitForTimeout(1000);
-          
-          // Verify no JavaScript errors occurred during the entire flow
-          expect(errors).toEqual([]);
-        }
-      } finally {
-        // Clean up the event listener to prevent memory leaks
-        page.off('console', errorHandler);
+        // Verify page has content
+        const bodyText = await page.textContent('body');
+        expect(bodyText).toBeTruthy();
+        
+        await page.waitForTimeout(1000);
+        
+        // Verify no JavaScript errors occurred during the entire flow
+        expect(errors).toEqual([]);
       }
+    } finally {
+      // Clean up the event listener to prevent memory leaks
+      page.off('console', errorHandler);
     }
+  }
+
+  test('pagination preserves page functionality on news page', async ({ page }) => {
+    await testPaginationFunctionality(page, '/news');
   });
 
-  test('direct pagination URLs work correctly', async ({ page }) => {
-    // Test direct access to paginated URLs
-    const paginationUrls = [
-      '/news?page=1',
-      '/news?page=2',
-      '/visual?page=1',
-      '/visual?page=2'
-    ];
+  test('pagination preserves page functionality on visual page', async ({ page }) => {
+    await testPaginationFunctionality(page, '/visual');
+  });
 
-    for (const url of paginationUrls) {
-      const response = await page.goto(url);
-      
-      // Should not return 404 or 500 errors
-      expect(response?.status()).toBeLessThan(400);
-      
-      // Should have content
-      const bodyText = await page.textContent('body');
-      expect(bodyText).toBeTruthy();
-    }
+  // Helper function to test direct pagination URLs
+  async function testDirectPaginationUrl(page: any, url: string) {
+    const response = await page.goto(url);
+    
+    // Should not return 404 or 500 errors
+    expect(response?.status()).toBeLessThan(400);
+    
+    // Should have content
+    const bodyText = await page.textContent('body');
+    expect(bodyText).toBeTruthy();
+  }
+
+  test('direct pagination URL /news?page=1 works correctly', async ({ page }) => {
+    await testDirectPaginationUrl(page, '/news?page=1');
+  });
+
+  test('direct pagination URL /news?page=2 works correctly', async ({ page }) => {
+    await testDirectPaginationUrl(page, '/news?page=2');
+  });
+
+  test('direct pagination URL /visual?page=1 works correctly', async ({ page }) => {
+    await testDirectPaginationUrl(page, '/visual?page=1');
+  });
+
+  test('direct pagination URL /visual?page=2 works correctly', async ({ page }) => {
+    await testDirectPaginationUrl(page, '/visual?page=2');
   });
 });
