@@ -1,25 +1,85 @@
 ---
+import { formatDate } from '../utils/date';
+
 interface Props {
-    title: string;
+    title?: string;
     text: string;
     imageUrl?: string;
     link?: string;
+    date?: string;
+    type?: 'visual' | 'video' | 'status' | 'link';
+    picture_full?: string;
+    picture_alt?: string;
+    post_sub?: Array<{
+        picture_large: string;
+        picture_full?: string;
+        picture_alt?: string;
+    }>;
+    video?: string;
+    isNews?: boolean;
 }
 
-const { title, text, imageUrl, link } = Astro.props;
+const { 
+    title, 
+    text, 
+    imageUrl, 
+    link, 
+    date, 
+    type, 
+    picture_full, 
+    picture_alt, 
+    post_sub, 
+    video,
+    isNews = false 
+} = Astro.props;
+
+// For news cards, don't show title if it's a generic type
+const shouldShowTitle = !isNews || (title && !['Status Update', 'Visual', 'Video', 'Link'].includes(title));
+const displayTitle = shouldShowTitle ? title : '';
 ---
 
-<div class="card">
-    <div class="card-content">
+<div class:list={["card", { "news-card": isNews }]}>
+    <div class="flex-responsive">
         <div class="text-content">
-            <h3>{title}</h3>
+            {date && <div class="date-display">{formatDate(date)}</div>}
+            {displayTitle && <h3>{displayTitle}</h3>}
             <p set:html={text}></p>
+            {link && (
+                <div class="link-content">
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                        {isNews ? 'View on external site →' : 'Learn more →'}
+                    </a>
+                </div>
+            )}
         </div>
-        {imageUrl && <div class="image-content">
-            <img src={imageUrl} alt={title} loading="lazy" />
-        </div>}
+        {((type === 'visual' || type === 'video') && imageUrl) || (!isNews && imageUrl) ? (
+            <div class:list={["image-content", { "media-content": isNews }]}>
+                {isNews && post_sub ? (
+                    <div class="images-grid">
+                        <a href={picture_full || imageUrl} class="image-link">
+                            <img src={imageUrl} alt={picture_alt || text} loading="lazy" />
+                        </a>
+                        {post_sub.map(sub => (
+                            <a href={sub.picture_full || sub.picture_large} class="image-link">
+                                <img src={sub.picture_large} alt={sub.picture_alt || text} loading="lazy" />
+                            </a>
+                        ))}
+                    </div>
+                ) : (
+                    <a href={picture_full || imageUrl} class="image-link">
+                        <img src={imageUrl} alt={picture_alt || title || ''} loading="lazy" />
+                    </a>
+                )}
+                {type === 'video' && video && (
+                    <video controls class="video-container">
+                        <source src={video} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                )}
+            </div>
+        ) : null}
     </div>
-    {link && <a href={link} class="card-link" />}
+    {!isNews && link && <a href={link} class="card-link" />}
 </div>
 
 <style>
@@ -31,66 +91,21 @@ const { title, text, imageUrl, link } = Astro.props;
         overflow-wrap: break-word;
     }
 
-    .card-content {
-        display: flex;
-        flex-direction: column;
-        gap: var(--spacing-md);
-    }
-
-    .text-content {
-        max-width: 100%;
-        overflow-wrap: break-word;
-    }
-
-    .text-content h3 {
-        font-size: var(--font-size-xl);
-        margin: 0 0 var(--spacing-sm) 0;
-        line-height: 1.2;
-        overflow-wrap: break-word;
-        word-break: break-word;
-    }
-
-    .text-content p {
-        font-size: var(--font-size-base);
-        margin: 0;
-        line-height: 1.6;
-        overflow-wrap: break-word;
-        word-break: break-word;
-        max-width: 100%;
-    }
-
-    /* Handle long URLs and links in text content */
-    .text-content p :global(a) {
-        overflow-wrap: break-word;
-        word-break: break-all;
-        hyphens: auto;
-    }
-
-    .image-content img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    @media (min-width: 768px) {
-        .card-content {
-            flex-direction: row;
-            align-items: flex-start;
-            gap: var(--spacing-lg);
-        }
-
-        .text-content {
-            flex: 9;
-        }
-
-        .image-content {
-            flex: 7;
-        }
-    }
-
     .card-link {
         position: absolute;
         inset: 0;
         cursor: pointer;
+    }
+
+    .video-container {
+        width: 100%;
+        margin: 1rem 0;
+        border-radius: 4px;
+    }
+
+    .link-content {
+        margin-top: 1rem;
+        max-width: 100%;
+        overflow-wrap: break-word;
     }
 </style>

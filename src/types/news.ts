@@ -23,19 +23,3 @@ export interface NewsItem {
     structuredData?: any[];
 }
 
-export interface NewsCardProps {
-    title?: string;
-    text: string;
-    date: string;
-    picture?: string;
-    picture_full?: string;
-    picture_alt?: string;
-    post_sub?: Array<{
-        picture_large: string;
-        picture_full?: string;
-        picture_alt?: string;
-    }>;
-    type?: NewsType;
-    link?: string;
-    video?: string;
-}

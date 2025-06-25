@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import PageHeader from '../components/PageHeader.astro';
 import noiseData from '../../lbw-data/noise.json';
 
 // Create a reversed copy of the noise data
@@ -8,12 +9,12 @@ const reversedNoiseData = [...noiseData].reverse();
 ---
 
 <Layout title="Noise">
-	<section>
-		<h1>our footprint</h1>
-		<p class="subtitle">all of our releases can be found here. download them or listen to them for free</p>
-
+	<PageHeader 
+		title="our footprint"
+		subtitle="all of our releases can be found here. download them or listen to them for free"
+	>
 		<div class="card-grid">
-				{reversedNoiseData.map(album => (
+			{reversedNoiseData.map(album => (
 				<Card 
 					title={album.title}
 					text={album.description.join(' ')}
@@ -22,34 +23,6 @@ const reversedNoiseData = [...noiseData].reverse();
 				/>
 			))}
 		</div>
-	</section>
+	</PageHeader>
 </Layout>
 
-<style>
-	section {
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: var(--spacing-md) var(--spacing-sm);
-	}
-
-	h1 {
-		font-size: var(--font-size-2xl);
-		margin-bottom: var(--spacing-xs);
-		color: var(--accent-color);
-		line-height: 1.2;
-	}
-
-	.subtitle {
-		font-size: var(--font-size-lg);
-		margin-bottom: var(--spacing-lg);
-		opacity: 0.8;
-		max-width: 800px;
-		line-height: 1.6;
-	}
-
-	.card-grid {
-		display: flex;
-		flex-direction: column;
-		gap: var(--spacing-lg);
-	}
-</style>

@@ -13,7 +13,7 @@ const haiku = [
 
 <Layout title="Home">
 	<div class="home-layout">
-		<div class="content">
+		<div class="card-grid content">
 			{homeData.map(item => (
 				<Card 
 					title={item.description[0]}
@@ -48,9 +48,6 @@ const haiku = [
 	}
 
 	.content {
-		display: flex;
-		flex-direction: column;
-		gap: 3rem;
 		padding-top: 3rem;
 	}
 

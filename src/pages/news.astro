@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import NewsCard from '../components/NewsCard.astro';
+import Card from '../components/Card.astro';
 import Pagination from '../components/Pagination.astro';
+import PageHeader from '../components/PageHeader.astro';
 import newsData from '../../lbw-data/news.json';
 import { validatePageParam, calculatePagination, shouldRedirectToFirstPage } from '../utils/pagination';
 import { sortByDateDescending } from '../utils/date';
@@ -44,18 +45,19 @@ const currentNews = sortedNewsData.slice(pagination.startIndex, pagination.endIn
 ---
 
 <Layout title="News">
-	<section>
-		<h1>news from the void</h1>
-		<p class="subtitle">updates from the shack, freshly delivered to your interLace TP system for home, office or mobile</p>
-		
-		<div class="news-grid">
+	<PageHeader 
+		title="news from the void"
+		subtitle="updates from the shack, freshly delivered to your interLace TP system for home, office or mobile"
+	>
+		<div class="content-grid">
 			{currentNews.map(news => (
-				<NewsCard 
+				<Card 
+					isNews={true}
 					type={news.type as NewsType}
 					title={news.type === 'status' ? '' : news.type.charAt(0).toUpperCase() + news.type.slice(1)}
 					text={news.description.join(' ')}
 					date={news.happened}
-					picture={news.picture_large}
+					imageUrl={news.picture_large}
 					picture_full={news.picture_full}
 					picture_alt={news.picture_alt}
 					video={news.video}
@@ -71,36 +73,6 @@ const currentNews = sortedNewsData.slice(pagination.startIndex, pagination.endIn
 			basePath="/news"
 			showPageInfo={true}
 		/>
-	</section>
+	</PageHeader>
 </Layout>
 
-<style>
-	section {
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: var(--spacing-md) var(--spacing-sm);
-	}
-
-	h1 {
-		font-size: var(--font-size-2xl);
-		margin-bottom: var(--spacing-xs);
-		color: var(--accent-color);
-		line-height: 1.2;
-	}
-
-	.subtitle {
-		font-size: var(--font-size-lg);
-		margin-bottom: var(--spacing-lg);
-		opacity: 0.8;
-		max-width: 800px;
-		line-height: 1.6;
-	}
-
-	.news-grid {
-		display: flex;
-		flex-direction: column;
-		gap: var(--spacing-lg);
-	}
-
-
-</style>
