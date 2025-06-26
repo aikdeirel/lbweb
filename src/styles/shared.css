@@ -163,6 +163,10 @@
   .text-content {
     flex: 9;
   }
+  
+  .image-content {
+    flex: 7;
+  }
 }
 
 /* Date display utility */
