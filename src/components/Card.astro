@@ -54,12 +54,12 @@ const displayTitle = shouldShowTitle ? title : '';
         </div>
         {((type === 'visual' || type === 'video') && imageUrl) || (!isNews && imageUrl) ? (
             <div class:list={["image-content", { "media-content": isNews }]}>
-                {isNews && post_sub ? (
+                {isNews ? (
                     <div class="images-grid">
                         <a href={picture_full || imageUrl} class="image-link">
                             <img src={imageUrl} alt={picture_alt || text} loading="lazy" />
                         </a>
-                        {post_sub.map(sub => (
+                        {post_sub && post_sub.map(sub => (
                             <a href={sub.picture_full || sub.picture_large} class="image-link">
                                 <img src={sub.picture_large} alt={sub.picture_alt || text} loading="lazy" />
                             </a>
