@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Mobile Image Overflow Prevention', () => {
-  // Configure mobile viewport
+  // Configure mobile viewport (testing below 768px breakpoint)
   test.use({
     viewport: { width: 375, height: 667 }, // iPhone SE dimensions
   });
