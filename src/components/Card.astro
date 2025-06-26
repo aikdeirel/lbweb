@@ -89,6 +89,8 @@ const displayTitle = shouldShowTitle ? title : '';
         margin-bottom: var(--spacing-lg);
         max-width: 100%;
         overflow-wrap: break-word;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .card-link {
@@ -107,5 +109,57 @@ const displayTitle = shouldShowTitle ? title : '';
         margin-top: 1rem;
         max-width: 100%;
         overflow-wrap: break-word;
+    }
+
+    .image-content {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .image-content img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+
+    .images-grid {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .images-grid img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+
+    @media (max-width: 768px) {
+        .card {
+            margin: 0 auto var(--spacing-lg) auto;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .image-content, 
+        .media-content {
+            max-width: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .image-content img,
+        .images-grid img {
+            max-width: 100%;
+            width: 100%;
+        }
+        
+        .flex-responsive {
+            max-width: 100%;
+            overflow: hidden;
+        }
     }
 </style>
