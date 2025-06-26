@@ -43,23 +43,23 @@ const displayTitle = shouldShowTitle ? title : '';
         <div class="text-content">
             {date && <div class="date-display">{formatDate(date)}</div>}
             {displayTitle && <h3>{displayTitle}</h3>}
-            <p set:html={text}></p>
-            {link && (
+            {isNews ? <p>{text}</p> : <p set:html={text}></p>}
+            {isNews && link && (
                 <div class="link-content">
                     <a href={link} target="_blank" rel="noopener noreferrer">
-                        {isNews ? 'View on external site →' : 'Learn more →'}
+                        View on external site →
                     </a>
                 </div>
             )}
         </div>
-        {((type === 'visual' || type === 'video') && imageUrl) || (!isNews && imageUrl) ? (
+        {((isNews && (type === 'visual' || type === 'video') && imageUrl) || (!isNews && imageUrl)) ? (
             <div class:list={["image-content", { "media-content": isNews }]}>
-                {isNews ? (
+                {isNews && post_sub && post_sub.length > 0 ? (
                     <div class="images-grid">
                         <a href={picture_full || imageUrl} class="image-link">
                             <img src={imageUrl} alt={picture_alt || text} loading="lazy" />
                         </a>
-                        {post_sub && post_sub.map(sub => (
+                        {post_sub.map(sub => (
                             <a href={sub.picture_full || sub.picture_large} class="image-link">
                                 <img src={sub.picture_large} alt={sub.picture_alt || text} loading="lazy" />
                             </a>
@@ -67,7 +67,7 @@ const displayTitle = shouldShowTitle ? title : '';
                     </div>
                 ) : (
                     <a href={picture_full || imageUrl} class="image-link">
-                        <img src={imageUrl} alt={picture_alt || title || ''} loading="lazy" />
+                        <img src={imageUrl} alt={picture_alt || (isNews ? text : title) || ''} loading="lazy" />
                     </a>
                 )}
                 {type === 'video' && video && (
