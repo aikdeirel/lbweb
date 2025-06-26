@@ -7,7 +7,7 @@ const headings = ["Betreiber", "Für den Inhalt verantwortlich", "Haftungshinwei
 ---
 
 <Layout title="Impressum">
-	<section>
+	<section class="page-section page-section--narrow">
 		<div class="content">
 			{impressumData[0].description.map(line => (
 				<Fragment>
@@ -19,11 +19,6 @@ const headings = ["Betreiber", "Für den Inhalt verantwortlich", "Haftungshinwei
 </Layout>
 
 <style>
-	section {
-		max-width: 800px;
-		margin: 0 auto;
-	}
-
 	.content {
 		line-height: 1.6;
 	}

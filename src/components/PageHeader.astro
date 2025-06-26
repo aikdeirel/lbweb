@@ -1,0 +1,15 @@
+---
+interface Props {
+    title: string;
+    subtitle?: string;
+    narrow?: boolean;
+}
+
+const { title, subtitle, narrow = false } = Astro.props;
+---
+
+<section class:list={["page-section", { "page-section--narrow": narrow }]}>
+    <h1 class="page-title">{title}</h1>
+    {subtitle && <p class="page-subtitle">{subtitle}</p>}
+    <slot />
+</section>
