@@ -106,8 +106,7 @@ export function initializeApp() {
         initializeHistoryHandling();
     });
 
-    // Re-initialize when new content is added (for dynamic content)
-    window.addEventListener('contentloaded', initializeFullscreenImages);
+    // Note: Re-initialization can be called manually via window.initializeFullscreenImages if needed
 
     // Export for manual initialization if needed
     (window as any).initializeFullscreenImages = initializeFullscreenImages;

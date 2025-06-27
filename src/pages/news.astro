@@ -1,73 +1,87 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Pagination from '../components/Pagination.astro';
-import PageHeader from '../components/PageHeader.astro';
-import newsData from '../../lbw-data/news.json';
-import { validatePageParam, calculatePagination, shouldRedirectToFirstPage } from '../utils/pagination';
-import { sortByDateDescending } from '../utils/date';
-import type { NewsType, NewsItem } from '../types/news';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Pagination from "../components/Pagination.astro";
+import PageHeader from "../components/PageHeader.astro";
+import newsData from "../../lbw-data/news.json";
+import {
+	validatePageParam,
+	calculatePagination,
+	shouldRedirectToFirstPage,
+} from "../utils/pagination";
+import { sortByDateDescending } from "../utils/date";
+import type { NewsType, NewsItem } from "../types/news";
 
 // Type check and sort the news data
-const typedNewsData = newsData.map(news => ({
-    ...news,
-    type: news.type as NewsType
+const typedNewsData = newsData.map((news) => ({
+	...news,
+	type: news.type as NewsType,
 })) as NewsItem[];
 
 const sortedNewsData = sortByDateDescending(typedNewsData);
 
 const PAGE_SIZE = 10;
-const pageParam = Astro.url.searchParams.get('page');
+const pageParam = Astro.url.searchParams.get("page");
 
 // Validate page parameter - this will throw an error for invalid params
 // which will be caught by Astro's 404 handling
 let currentPage: number;
 try {
-    currentPage = validatePageParam(pageParam);
+	currentPage = validatePageParam(pageParam);
 } catch (error) {
-    return Astro.redirect('/404');
+	return Astro.redirect("/404");
 }
 
 // Calculate pagination
 const pagination = calculatePagination({
-    currentPage,
-    totalItems: sortedNewsData.length,
-    pageSize: PAGE_SIZE
+	currentPage,
+	totalItems: sortedNewsData.length,
+	pageSize: PAGE_SIZE,
 });
 
 // Redirect if page is out of bounds
 if (shouldRedirectToFirstPage(currentPage, pagination.totalPages)) {
-    return Astro.redirect('/news?page=1');
+	return Astro.redirect("/news?page=1");
 }
 
 // Get only the news for current page
-const currentNews = sortedNewsData.slice(pagination.startIndex, pagination.endIndex);
+const currentNews = sortedNewsData.slice(
+	pagination.startIndex,
+	pagination.endIndex,
+);
 ---
 
 <Layout title="News">
-	<PageHeader 
+	<PageHeader
 		title="news from the void"
 		subtitle="updates from the shack, freshly delivered to your interLace TP system for home, office or mobile"
 	>
-		<div class="content-grid">
-			{currentNews.map(news => (
-				<Card 
-					isNews={true}
-					type={news.type as NewsType}
-					title={news.type === 'status' ? '' : news.type.charAt(0).toUpperCase() + news.type.slice(1)}
-					text={news.description.join(' ')}
-					date={news.happened}
-					imageUrl={news.picture_large}
-					picture_full={news.picture_full}
-					picture_alt={news.picture_alt}
-					video={news.video}
-					link={news.link}
-					post_sub={news.post_sub}
-				/>
-			))}
+		<div class="grid">
+			{
+				currentNews.map((news) => (
+					<Card
+						isNews={true}
+						type={news.type as NewsType}
+						title={
+							news.type === "status"
+								? ""
+								: news.type.charAt(0).toUpperCase() +
+									news.type.slice(1)
+						}
+						text={news.description.join(" ")}
+						date={news.happened}
+						imageUrl={news.picture_large}
+						picture_full={news.picture_full}
+						picture_alt={news.picture_alt}
+						video={news.video}
+						link={news.link}
+						post_sub={news.post_sub}
+					/>
+				))
+			}
 		</div>
 
-		<Pagination 
+		<Pagination
 			currentPage={pagination.currentPage}
 			totalPages={pagination.totalPages}
 			basePath="/news"
@@ -75,4 +89,3 @@ const currentNews = sortedNewsData.slice(pagination.startIndex, pagination.endIn
 		/>
 	</PageHeader>
 </Layout>
-

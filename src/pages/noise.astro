@@ -1,28 +1,30 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import PageHeader from '../components/PageHeader.astro';
-import noiseData from '../../lbw-data/noise.json';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import PageHeader from "../components/PageHeader.astro";
+import noiseData from "../../lbw-data/noise.json";
+import { sortByDateDescending } from "../utils/date";
 
-// Create a reversed copy of the noise data
-const reversedNoiseData = [...noiseData].reverse();
+// Sort noise data by date (most recent first)
+const sortedNoiseData = sortByDateDescending(noiseData);
 ---
 
 <Layout title="Noise">
-	<PageHeader 
+	<PageHeader
 		title="our footprint"
 		subtitle="all of our releases can be found here. download them or listen to them for free"
 	>
-		<div class="card-grid">
-			{reversedNoiseData.map(album => (
-				<Card 
-					title={album.title}
-					text={album.description.join(' ')}
-					imageUrl={album.picture_large}
-					link={album.link}
-				/>
-			))}
+		<div class="grid">
+			{
+				sortedNoiseData.map((album) => (
+					<Card
+						title={album.title}
+						text={album.description.join(" ")}
+						imageUrl={album.picture_large}
+						link={album.link}
+					/>
+				))
+			}
 		</div>
 	</PageHeader>
 </Layout>
-

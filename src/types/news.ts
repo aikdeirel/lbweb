@@ -20,6 +20,5 @@ export interface NewsItem {
         picture_full?: string;
         picture_alt?: string;
     }>;
-    structuredData?: any[];
 }
 

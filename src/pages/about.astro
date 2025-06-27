@@ -1,24 +1,29 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import PageHeader from '../components/PageHeader.astro';
-import aboutData from '../../lbw-data/about.json';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import PageHeader from "../components/PageHeader.astro";
+import aboutData from "../../lbw-data/about.json";
 ---
 
 <Layout title="About">
-	<PageHeader 
+	<PageHeader
 		title="from the woods we come"
 		subtitle="a four-piece psychedelic doom noise band, dancing on the razor's edge between technological advancements and beer. every piece we play is a result of our individual beings forming a temporary whole."
 	>
-		<div class="card-grid">
-			{aboutData.map(item => (
-				<Card 
-					title={item.happened || ''}
-					text={Array.isArray(item.description) ? item.description.join('<br><br>') : item.description}
-					imageUrl={item.picture_large}
-				/>
-			))}
+		<div class="grid">
+			{
+				aboutData.map((item) => (
+					<Card
+						title={item.happened || ""}
+						text={
+							Array.isArray(item.description)
+								? item.description.join("<br><br>")
+								: item.description
+						}
+						imageUrl={item.picture_large}
+					/>
+				))
+			}
 		</div>
 	</PageHeader>
 </Layout>
-
