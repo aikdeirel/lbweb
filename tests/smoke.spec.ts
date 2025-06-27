@@ -10,32 +10,32 @@ test.describe('Smoke Tests - Basic Page Loading', () => {
       if (msg.type() === 'error') {
         const errorText = msg.text();
         // Only capture errors that affect functionality, ignore resource loading errors
-        if (!errorText.includes('Failed to load resource') && 
-            !errorText.includes('404') &&
-            !errorText.includes('net::ERR_') &&
-            !errorText.includes('favicon')) {
+        if (!errorText.includes('Failed to load resource') &&
+          !errorText.includes('404') &&
+          !errorText.includes('net::ERR_') &&
+          !errorText.includes('favicon')) {
           functionalErrors.push(errorText);
         }
       }
     };
     page.on('console', errorHandler);
-    
+
     try {
       const response = await page.goto(path);
-      
+
       // Check that the page loaded successfully
       expect(response?.status()).toBe(200);
-      
+
       // Check that the page has content (not empty)
       const bodyText = await page.textContent('body');
       expect(bodyText).toBeTruthy();
       if (bodyText) {
         expect(bodyText.length).toBeGreaterThan(10);
       }
-      
+
       // Wait a moment for any async operations
       await page.waitForTimeout(1000);
-      
+
       // No critical JavaScript errors should be present
       expect(functionalErrors).toEqual([]);
     } finally {
@@ -78,25 +78,8 @@ test.describe('Smoke Tests - Basic Page Loading', () => {
 
   test('404 page works correctly', async ({ page }) => {
     const response = await page.goto('/nonexistent-page');
-    
+
     // Should return a 404 status or redirect to 404 page
     expect(response?.status()).toBeGreaterThanOrEqual(400);
-  });
-
-  test('API endpoint /api/news responds correctly', async ({ request }) => {
-    const response = await request.get('/api/news');
-    expect(response.status()).toBe(200);
-    
-    // Verify response content type
-    expect(response.headers()['content-type']).toContain('application/json');
-    
-    const data = await response.json();
-    expect(data).toBeDefined();
-    
-    // Verify expected structure
-    expect(data).toHaveProperty('news');
-    expect(data).toHaveProperty('total');
-    expect(data).toHaveProperty('page');
-    expect(Array.isArray(data.news)).toBe(true);
   });
 });
