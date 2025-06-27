@@ -173,7 +173,7 @@ ol {
 
 /* Visual page specific grid */
 .visual-grid {
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-md);
 }
 
@@ -194,10 +194,34 @@ ol {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+  animation: psychedelic-colors 30s ease-in-out infinite;
 }
 
 .visual-image-link:hover .visual-image {
   transform: scale(1.1);
+}
+
+/* Psychedelic color animation for visual page */
+@keyframes psychedelic-colors {
+  0% {
+    filter: hue-rotate(0deg) saturate(1.2) brightness(1);
+  }
+
+  25% {
+    filter: hue-rotate(90deg) saturate(1.4) brightness(1.1);
+  }
+
+  50% {
+    filter: hue-rotate(180deg) saturate(1.6) brightness(1.2);
+  }
+
+  75% {
+    filter: hue-rotate(270deg) saturate(1.4) brightness(1.1);
+  }
+
+  100% {
+    filter: hue-rotate(360deg) saturate(1.2) brightness(1);
+  }
 }
 
 /* Pit page specific styles */
@@ -700,7 +724,6 @@ ol {
 
   /* Visual grid responsive behavior */
   .visual-grid {
-    grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-lg);
   }
 
@@ -723,7 +746,6 @@ ol {
 
   /* Visual grid for large screens */
   .visual-grid {
-    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-xl);
   }
 
