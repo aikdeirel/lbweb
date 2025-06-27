@@ -51,7 +51,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Courier Prime", "Lucida Console", "Courier New", monospace;
   color: var(--text-color);
   background-color: var(--background-color);
   line-height: 1.6;
@@ -315,6 +315,7 @@ ol {
 .site-title {
   font-size: var(--font-size-lg);
   text-decoration: none;
+  color: var(--text-color);
 }
 
 .nav-links {

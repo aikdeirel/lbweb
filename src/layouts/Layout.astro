@@ -118,7 +118,6 @@ const fullPath = searchParams ? `${pathname}?${searchParams}` : pathname;
 	}
 
 	html {
-		font-family: "Courier Prime", "Lucida Console", "Courier New", monospace;
 		position: relative;
 		background-color: var(--background-color);
 		color: var(--text-color);
@@ -150,7 +149,7 @@ const fullPath = searchParams ? `${pathname}?${searchParams}` : pathname;
 		text-decoration: underline;
 	}
 
-	:global(a:visited) {
+	:global(a:not(.site-title):visited) {
 		color: var(--text-color);
 	}
 
