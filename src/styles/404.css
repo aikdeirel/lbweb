@@ -1,26 +1,136 @@
+/* ==========================================================================
+   404 ERROR PAGE STYLES
+   - A mobile-first, animated glitch effect for a 404 page.
+   - Depends on variables defined in the main stylesheet (e.g., --spacing-lg).
+   ========================================================================== */
+
+
+/* ==========================================================================
+   KEYFRAME ANIMATIONS
+   ========================================================================== */
+
+@keyframes glitch-anim-1 {
+
+    0%,
+    100% {
+        clip-path: inset(45% 0 50% 0);
+    }
+
+    20% {
+        clip-path: inset(10% 0 85% 0);
+    }
+
+    40% {
+        clip-path: inset(60% 0 20% 0);
+    }
+
+    60% {
+        clip-path: inset(80% 0 5% 0);
+    }
+
+    80% {
+        clip-path: inset(25% 0 65% 0);
+    }
+}
+
+@keyframes glitch-anim-2 {
+
+    0%,
+    100% {
+        clip-path: inset(5% 0 80% 0);
+    }
+
+    20% {
+        clip-path: inset(70% 0 25% 0);
+    }
+
+    40% {
+        clip-path: inset(40% 0 45% 0);
+    }
+
+    60% {
+        clip-path: inset(90% 0 2% 0);
+    }
+
+    80% {
+        clip-path: inset(55% 0 30% 0);
+    }
+}
+
+/* ==========================================================================
+   MAIN CONTAINER
+     ========================================================================== */
+
 .error-section {
-    max-width: 100vw;
-    width: 100%;
-    margin: 0;
-    padding: var(--spacing-md) var(--spacing-sm);
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 80vh;
-    position: relative;
-    z-index: 2;
-    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: var(--spacing-md) var(--spacing-sm);
+    text-align: center;
+    overflow: hidden;
+    /* Prevent horizontal scrollbars */
+
+    /* Set up the 3D space for child elements */
     perspective: 2000px;
     transform-style: preserve-3d;
 }
+
+
+/* ==========================================================================
+   GLITCH EFFECT COMPONENTS
+     ========================================================================== */
 
 .glitch-container {
     position: relative;
     margin-bottom: var(--spacing-lg);
     transform-style: preserve-3d;
-    transform: rotateX(20deg) rotateY(-53deg) rotateZ(10deg) scale(0.8);
+    transform: rotateX(20deg) rotateY(-25deg) rotateZ(10deg) scale(1);
+}
+
+.glitch-text {
+    position: relative;
+    font-size: clamp(4rem, 25vw, 12rem);
+    /* Responsive font size */
+    font-weight: 700;
+    line-height: 1;
+    color: var(--text-color, #e0e0e0);
+    letter-spacing: -0.05em;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* The two pseudo-elements create the colored "glitch" layers. */
+.glitch-text::before,
+.glitch-text::after {
+    content: attr(data-text);
+    /* The text is passed via a data attribute */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    clip-path: inset(50% 0 50% 0);
+    /* Start clipped */
+}
+
+/* Red layer */
+.glitch-text::before {
+    color: #ff00c1;
+    text-shadow: -1px 0 #ff00c1;
+    animation: glitch-anim-1 4s infinite linear alternate-reverse;
+    z-index: -1;
+}
+
+/* Blue layer */
+.glitch-text::after {
+    color: #3498db;
+    text-shadow: 1px 0 #3498db;
+    animation: glitch-anim-2 3s infinite linear alternate-reverse;
+    z-index: -2;
 }
 
 .text-glow {
@@ -29,79 +139,70 @@
     left: 50%;
     width: 200%;
     height: 200%;
-    transform: translate(-50%, -50%) rotate(-8deg) translateZ(-50px);
-    filter: blur(20px);
     pointer-events: none;
-    mix-blend-mode: soft-light;
+    transform: translate(-50%, -50%) translateZ(-100px);
+    /* Push behind the text */
+    opacity: 0.3;
+    filter: blur(40px);
 }
+
+
+/* ==========================================================================
+   TYPOGRAPHY & LINKS
+     ========================================================================== */
 
 .error-subtitle,
 .error-back-text {
     -webkit-text-stroke: 0.5px rgba(212, 212, 212, 0.1);
     filter: drop-shadow(0 0 2px rgba(212, 212, 212, 0.1));
-    backdrop-filter: blur(0.5px);
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
 }
 
 .error-subtitle {
     font-size: var(--font-size-lg);
     margin-bottom: var(--spacing-lg);
     opacity: 0.8;
-    line-height: 1.6;
-    transform: rotate(-8deg) skew(4deg, -4deg);
-    transform-origin: center;
-    text-shadow:
-        -1px -1px 0 rgba(212, 212, 212, 0.2),
-        1px 1px 15px rgba(0, 0, 0, 0.5);
-    position: relative;
-}
-
-.glitch-text::before,
-.glitch-text::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-}
-
-.glitch-text::before {
-    color: #ff00c1;
-    z-index: -1;
-}
-
-.glitch-text::after {
-    color: #3498db;
-    z-index: -2;
+    transform: rotate(-5deg) skew(2deg, -2deg);
 }
 
 .error-back-text {
-    font-size: var(--font-size-lg);
-    transform: rotate(24deg) skew(305deg, 13deg);
-    transform-origin: center;
-    text-shadow: -2px -2px 0 rgba(212, 212, 212, 0.2), 2px 2px 20px rgba(0, 0, 0, 0.6);
-    position: relative;
-    filter: blur(0.5px);
+    font-size: var(--font-size-base);
+    opacity: 0.7;
 }
 
 .error-back-link {
-    font-size: var(--font-size-lg);
-    text-decoration: underline;
     display: inline-block;
+    font-size: var(--font-size-lg);
+    color: var(--text-color, #e0e0e0);
+    text-decoration: underline;
+    margin-top: var(--spacing-md);
     transform-style: preserve-3d;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, text-shadow 0.3s ease, filter 0.3s ease;
 }
 
 .error-back-link:hover {
-    opacity: 0.7;
-    transform:
-        translateZ(60px) rotateY(35deg) scale(1.1);
+    opacity: 1;
+    transform: translateZ(50px) scale(1.1);
     text-shadow:
-        -3px -3px 0 rgba(212, 212, 212, 0.3),
-        -6px -6px 0 rgba(212, 212, 212, 0.2),
-        2px 2px 30px rgba(0, 0, 0, 0.7),
-        4px 8px 12px rgba(0, 0, 0, 0.6),
-        -4px -8px 12px rgba(212, 212, 212, 0.2);
-    filter: brightness(1.2) contrast(1.1);
+        0 0 10px var(--accent-color, #00bfff),
+        0 0 20px var(--accent-color, #00bfff),
+        0 0 40px rgba(0, 0, 0, 0.5);
+    filter: brightness(1.2);
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES (Mobile First)
+     ========================================================================== */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .glitch-container {
+        transform: rotateX(20deg) rotateY(-25deg) rotateZ(10deg) scale(1);
+    }
+
+    .error-back-text {
+        font-size: var(--font-size-lg);
+    }
 }
