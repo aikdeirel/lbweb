@@ -16,10 +16,10 @@ test.describe('Accessibility Tests', () => {
             expect(h1Text?.trim()).toBeTruthy();
         }
 
-        // Home page should have a main heading for accessibility
+        // Home page should have exactly one main heading for accessibility
         await page.goto('/');
         const homeH1Count = await page.locator('main h1, .main h1').count();
-        expect(homeH1Count).toBeGreaterThanOrEqual(1); // Should have at least one H1
+        expect(homeH1Count).toBe(1); // Should have exactly one H1
     });
 
     test('all images have alt text', async ({ page }) => {
