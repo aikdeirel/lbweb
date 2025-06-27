@@ -188,7 +188,7 @@ test.describe('Error Handling and Edge Cases', () => {
                     // Should show validation errors
                     const validationMessages = page.locator(':invalid, .error, .field-error');
                     // Expect either browser validation or custom validation
-                    expect(await validationMessages.count()).toBeGreaterThanOrEqual(0);
+                    expect(await validationMessages.count()).toBeGreaterThan(0);
                 }
             }
         }
