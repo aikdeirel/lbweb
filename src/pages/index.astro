@@ -1,38 +1,45 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import homeData from '../../lbw-data/home.json';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import homeData from "../../lbw-data/home.json";
 
 const haiku = [
-    "from the woods we come",
-    "the psychedelic mayhem",
-    "nothing but the void"
+	"from the woods we come",
+	"the psychedelic mayhem",
+	"nothing but the void",
 ];
-
 ---
 
 <Layout title="Home">
 	<div class="home-layout">
-		<div class="card-grid content">
-			{homeData.map(item => (
-				<Card 
-					title={item.description[0]}
-					text={Array.isArray(item.description) ? item.description.slice(1).join('<br><br>') : item.description[1]}
-					imageUrl={item.picture_large}
-					link={item.link_intern}
-				/>
-			))}
+		<div class="card-grid home-content">
+			{
+				homeData.map((item) => (
+					<Card
+						title={item.description[0]}
+						text={
+							Array.isArray(item.description)
+								? item.description.slice(1).join("<br><br>")
+								: item.description[1]
+						}
+						imageUrl={item.picture_large}
+						link={item.link_intern}
+					/>
+				))
+			}
 		</div>
 		<div class="haiku">
-			{haiku.map(line => (
-				<div class="haiku-line">
-					{line.split('').map(char => (
-						<div class="haiku-char">
-							{char === ' ' ? '\u00A0' : char}
-						</div>
-					))}
-				</div>
-			))}
+			{
+				haiku.map((line) => (
+					<div class="haiku-line">
+						{line.split("").map((char) => (
+							<div class="haiku-char">
+								{char === " " ? "\u00A0" : char}
+							</div>
+						))}
+					</div>
+				))
+			}
 		</div>
 	</div>
 </Layout>
@@ -47,7 +54,7 @@ const haiku = [
 		padding: 0 1rem;
 	}
 
-	.content {
+	.home-content {
 		padding-top: 3rem;
 	}
 
@@ -85,6 +92,16 @@ const haiku = [
 	@media (max-width: 768px) {
 		.home-layout {
 			grid-template-columns: 1fr;
+			gap: 2rem;
+			padding: 0 0.5rem;
+			max-width: 100%;
+			overflow: hidden;
+		}
+
+		.home-content {
+			padding-top: 1rem;
+			max-width: 100%;
+			overflow: hidden;
 		}
 
 		.haiku {

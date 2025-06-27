@@ -1,8 +1,18 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "**/*", "tests/**/*"],
-  "exclude": ["dist"],
+  "include": [
+    ".astro/types.d.ts",
+    "**/*",
+    "tests/**/*"
+  ],
+  "exclude": [
+    "dist"
+  ],
   "compilerOptions": {
-    "types": ["@playwright/test"]
+    "types": [
+      "@playwright/test"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
   }
 }

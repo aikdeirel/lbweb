@@ -8,7 +8,7 @@ interface Props {
 const { title, subtitle, narrow = false } = Astro.props;
 ---
 
-<section class:list={["page-section", { "page-section--narrow": narrow }]}>
+<section class={`page-section ${narrow ? "page-section--narrow" : ""}`}>
     <h1 class="page-title">{title}</h1>
     {subtitle && <p class="page-subtitle">{subtitle}</p>}
     <slot />

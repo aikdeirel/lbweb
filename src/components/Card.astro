@@ -1,5 +1,5 @@
 ---
-import { formatDate } from '../utils/date';
+import { formatDate } from "../utils/date";
 
 interface Props {
     title?: string;
@@ -7,7 +7,7 @@ interface Props {
     imageUrl?: string;
     link?: string;
     date?: string;
-    type?: 'visual' | 'video' | 'status' | 'link';
+    type?: "visual" | "video" | "status" | "link";
     picture_full?: string;
     picture_alt?: string;
     post_sub?: Array<{
@@ -19,147 +19,100 @@ interface Props {
     isNews?: boolean;
 }
 
-const { 
-    title, 
-    text, 
-    imageUrl, 
-    link, 
-    date, 
-    type, 
-    picture_full, 
-    picture_alt, 
-    post_sub, 
+const {
+    title,
+    text,
+    imageUrl,
+    link,
+    date,
+    type,
+    picture_full,
+    picture_alt,
+    post_sub,
     video,
-    isNews = false 
+    isNews = false,
 } = Astro.props;
 
 // For news cards, don't show title if it's a generic type
-const shouldShowTitle = !isNews || (title && !['Status Update', 'Visual', 'Video', 'Link'].includes(title));
-const displayTitle = shouldShowTitle ? title : '';
+const shouldShowTitle =
+    !isNews ||
+    (title && !["Status Update", "Visual", "Video", "Link"].includes(title));
+const displayTitle = shouldShowTitle ? title : "";
 ---
 
-<div class:list={["card", { "news-card": isNews }]}>
+<div class={`card ${isNews ? "card--news" : ""}`}>
     <div class="flex-responsive">
         <div class="text-content">
             {date && <div class="date-display">{formatDate(date)}</div>}
             {displayTitle && <h3>{displayTitle}</h3>}
-            {isNews ? <p>{text}</p> : <p set:html={text}></p>}
-            {isNews && link && (
-                <div class="link-content">
-                    <a href={link} target="_blank" rel="noopener noreferrer">
-                        View on external site →
-                    </a>
-                </div>
-            )}
-        </div>
-        {((isNews && (type === 'visual' || type === 'video') && imageUrl) || (!isNews && imageUrl)) ? (
-            <div class:list={["image-content", { "media-content": isNews }]}>
-                {isNews && post_sub && post_sub.length > 0 ? (
-                    <div class="images-grid">
-                        <a href={picture_full || imageUrl} class="image-link">
-                            <img src={imageUrl} alt={picture_alt || text} loading="lazy" />
+            {isNews ? <p>{text}</p> : <p set:html={text} />}
+            {
+                isNews && link && (
+                    <div class="link-content">
+                        <a
+                            href={link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="link-primary"
+                        >
+                            View on external site →
                         </a>
-                        {post_sub.map(sub => (
-                            <a href={sub.picture_full || sub.picture_large} class="image-link">
-                                <img src={sub.picture_large} alt={sub.picture_alt || text} loading="lazy" />
-                            </a>
-                        ))}
                     </div>
-                ) : (
-                    <a href={picture_full || imageUrl} class="image-link">
-                        <img src={imageUrl} alt={picture_alt || (isNews ? text : title) || ''} loading="lazy" />
-                    </a>
-                )}
-                {type === 'video' && video && (
-                    <video controls class="video-container">
-                        <source src={video} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                )}
-            </div>
-        ) : null}
+                )
+            }
+        </div>
+        {
+            (isNews && (type === "visual" || type === "video") && imageUrl) ||
+            (!isNews && imageUrl) ? (
+                <div class={`image-content ${isNews ? "media-content" : ""}`}>
+                    {isNews && post_sub && post_sub.length > 0 ? (
+                        <div class="images-grid">
+                            <a
+                                href={picture_full || imageUrl}
+                                class="image-link"
+                            >
+                                <img
+                                    src={imageUrl}
+                                    alt={picture_alt || text}
+                                    loading="lazy"
+                                    class="image-responsive"
+                                />
+                            </a>
+                            {post_sub.map((sub) => (
+                                <a
+                                    href={sub.picture_full || sub.picture_large}
+                                    class="image-link"
+                                >
+                                    <img
+                                        src={sub.picture_large}
+                                        alt={sub.picture_alt || text}
+                                        loading="lazy"
+                                        class="image-responsive"
+                                    />
+                                </a>
+                            ))}
+                        </div>
+                    ) : (
+                        <a href={picture_full || imageUrl} class="image-link">
+                            <img
+                                src={imageUrl}
+                                alt={
+                                    picture_alt || (isNews ? text : title) || ""
+                                }
+                                loading="lazy"
+                                class="image-responsive"
+                            />
+                        </a>
+                    )}
+                    {type === "video" && video && (
+                        <video controls class="video-container">
+                            <source src={video} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    )}
+                </div>
+            ) : null
+        }
     </div>
-    {!isNews && link && <a href={link} class="card-link" />}
+    {!isNews && link && <a href={link} class="link-overlay" />}
 </div>
-
-<style>
-    .card {
-        position: relative;
-        background: transparent;
-        margin-bottom: var(--spacing-lg);
-        max-width: 100%;
-        overflow-wrap: break-word;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .card-link {
-        position: absolute;
-        inset: 0;
-        cursor: pointer;
-    }
-
-    .video-container {
-        width: 100%;
-        margin: 1rem 0;
-        border-radius: 4px;
-    }
-
-    .link-content {
-        margin-top: 1rem;
-        max-width: 100%;
-        overflow-wrap: break-word;
-    }
-
-    .image-content {
-        max-width: 100%;
-        overflow: hidden;
-    }
-
-    .image-content img {
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        box-sizing: border-box;
-    }
-
-    .images-grid {
-        max-width: 100%;
-        overflow: hidden;
-    }
-
-    .images-grid img {
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        box-sizing: border-box;
-    }
-
-    @media (max-width: 768px) {
-        .card {
-            margin: 0 auto var(--spacing-lg) auto;
-            padding: 0;
-            overflow: hidden;
-        }
-
-        .image-content, 
-        .media-content {
-            max-width: 100%;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .image-content img,
-        .images-grid img {
-            max-width: 100%;
-            width: 100%;
-        }
-        
-        .flex-responsive {
-            max-width: 100%;
-            overflow: hidden;
-        }
-    }
-</style>

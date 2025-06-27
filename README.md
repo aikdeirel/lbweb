@@ -18,9 +18,37 @@ A brief overview of the project structure:
 
 All commands are run from the root of the project, from a terminal:
 
-| Command           | Action                                         |
-| :---------------- | :--------------------------------------------- |
-| `npm install`     | Installs dependencies                          |
-| `npm run dev`     | Starts local dev server at `localhost:4321`    |
-| `npm run build`   | Build your production site to `./dist/`        |
-| `npm run preview` | Preview your build locally, before deploying   |
+| Command                  | Action                                         |
+| :----------------------- | :--------------------------------------------- |
+| `npm install`            | Installs dependencies                          |
+| `npm run dev`            | Starts local dev server at `localhost:4321`    |
+| `npm run dev:docker`     | Starts dev server in Docker with hot reload    |
+| `npm run dev:docker:down`| Stops the Docker development environment       |
+| `npm run build`          | Build your production site to `./dist/`        |
+| `npm run preview`        | Preview your build locally, before deploying   |
+
+## 🔧 Development
+
+### Local Development
+For local development with hot module reload:
+```bash
+npm install
+npm run dev
+```
+
+### Docker Development
+For development using Docker (useful for environment consistency):
+```bash
+npm run dev:docker
+```
+
+This will:
+- Build a development Docker container
+- Start Astro with hot module reload
+- Mount your source files so changes are reflected immediately
+- Make the site available at `http://localhost:4321`
+
+To stop the Docker development environment:
+```bash
+npm run dev:docker:down
+```

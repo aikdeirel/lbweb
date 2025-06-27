@@ -1,60 +1,78 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Pagination from '../components/Pagination.astro';
-import PageHeader from '../components/PageHeader.astro';
-import newsData from '../../lbw-data/news.json';
-import { validatePageParam, calculatePagination, shouldRedirectToFirstPage } from '../utils/pagination';
-import { sortByDateDescending } from '../utils/date';
-import type { NewsItem } from '../types/news';
+import Layout from "../layouts/Layout.astro";
+import Pagination from "../components/Pagination.astro";
+import PageHeader from "../components/PageHeader.astro";
+import newsData from "../../lbw-data/news.json";
+import {
+	validatePageParam,
+	calculatePagination,
+	shouldRedirectToFirstPage,
+} from "../utils/pagination";
+import { sortByDateDescending } from "../utils/date";
+import type { NewsItem } from "../types/news";
 
 // Filter news data for items with picture_large and sort by date
 const typedNewsData = newsData as NewsItem[];
 const visualData = sortByDateDescending(
-    typedNewsData.filter(item => item.picture_large)
+	typedNewsData.filter((item) => item.picture_large),
 );
 
 const PAGE_SIZE = 15; // 3 columns × 5 rows
-const pageParam = Astro.url.searchParams.get('page');
+const pageParam = Astro.url.searchParams.get("page");
 
 // Validate page parameter - this will throw an error for invalid params
 // which will be caught by Astro's 404 handling
 let currentPage: number;
 try {
-    currentPage = validatePageParam(pageParam);
+	currentPage = validatePageParam(pageParam);
 } catch (error) {
-    return Astro.redirect('/404');
+	return Astro.redirect("/404");
 }
 
 // Calculate pagination
 const pagination = calculatePagination({
-    currentPage,
-    totalItems: visualData.length,
-    pageSize: PAGE_SIZE
+	currentPage,
+	totalItems: visualData.length,
+	pageSize: PAGE_SIZE,
 });
 
 // Redirect if page is out of bounds
 if (shouldRedirectToFirstPage(currentPage, pagination.totalPages)) {
-    return Astro.redirect('/visual?page=1');
+	return Astro.redirect("/visual?page=1");
 }
 
 // Get only the images for current page
-const currentImages = visualData.slice(pagination.startIndex, pagination.endIndex);
+const currentImages = visualData.slice(
+	pagination.startIndex,
+	pagination.endIndex,
+);
 ---
 
 <Layout title="Visual">
-	<PageHeader 
-		title="enjoy the psychedelic mayhem in pictures"
-		narrow={true}
-	>
-		<div class="image-grid">
-			{currentImages.map(image => (
-				<a href={image.picture_full || image.picture_large} class="image-link">
-					<img src={image.picture_large} alt={image.picture_alt || image.description?.[0] || ''} loading="lazy" />
-				</a>
-			))}
+	<PageHeader title="enjoy the psychedelic mayhem in pictures">
+		<div class="grid visual-grid">
+			{
+				currentImages.map((image) => (
+					<a
+						href={image.picture_full || image.picture_large}
+						class="image-link visual-image-link"
+					>
+						<img
+							src={image.picture_large}
+							alt={
+								image.picture_alt ||
+								image.description?.[0] ||
+								""
+							}
+							loading="lazy"
+							class="visual-image"
+						/>
+					</a>
+				))
+			}
 		</div>
 
-		<Pagination 
+		<Pagination
 			currentPage={pagination.currentPage}
 			totalPages={pagination.totalPages}
 			basePath="/visual"
@@ -62,17 +80,3 @@ const currentImages = visualData.slice(pagination.startIndex, pagination.endInde
 		/>
 	</PageHeader>
 </Layout>
-
-<style>
-	.image-link {
-		aspect-ratio: 1;
-		overflow: hidden;
-	}
-
-	.image-link img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-</style>
-

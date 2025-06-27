@@ -9,59 +9,30 @@ interface Props {
 const { currentPage, totalPages, basePath, showPageInfo = false } = Astro.props;
 ---
 
-{totalPages > 1 && (
-    <div class="pagination">
-        {currentPage > 1 && (
-            <a href={`${basePath}?page=${currentPage - 1}`} class="prev">← Previous</a>
-        )}
-        {showPageInfo && (
-            <span class="page-info">Page {currentPage} of {totalPages}</span>
-        )}
-        {currentPage < totalPages && (
-            <a href={`${basePath}?page=${currentPage + 1}`} class="next">Next →</a>
-        )}
-    </div>
-)}
-
-<style>
-    .pagination {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: var(--spacing-lg);
-        padding: var(--spacing-md) 0;
-        border-top: 1px solid var(--text-color);
-        gap: var(--spacing-sm);
-    }
-
-    .pagination a {
-        color: var(--text-color);
-        text-decoration: none;
-        font-size: var(--font-size-lg);
-        padding: var(--spacing-xs) var(--spacing-sm);
-        transition: opacity 0.3s ease;
-    }
-
-    .pagination a:hover {
-        text-decoration: underline;
-        opacity: 0.7;
-    }
-
-    .page-info {
-        color: var(--text-color);
-        font-size: var(--font-size-base);
-        opacity: 0.8;
-    }
-
-    @media (max-width: 768px) {
-        .pagination {
-            flex-direction: column;
-            gap: var(--spacing-sm);
-            text-align: center;
-        }
-        
-        .pagination a {
-            font-size: var(--font-size-base);
-        }
-    }
-</style>
+{
+    totalPages > 1 && (
+        <div class="pagination">
+            {currentPage > 1 && (
+                <a
+                    href={`${basePath}?page=${currentPage - 1}`}
+                    class="pagination-link"
+                >
+                    ← Previous
+                </a>
+            )}
+            {showPageInfo && (
+                <span class="page-info">
+                    Page {currentPage} of {totalPages}
+                </span>
+            )}
+            {currentPage < totalPages && (
+                <a
+                    href={`${basePath}?page=${currentPage + 1}`}
+                    class="pagination-link"
+                >
+                    Next →
+                </a>
+            )}
+        </div>
+    )
+}
