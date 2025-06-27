@@ -13,6 +13,9 @@ const haiku = [
 <Layout title="Home">
 	<div class="home-layout">
 		<div class="grid home-content">
+			<h1 class="sr-only">
+				Liquid Barbed Wire - Psychedelic Doom Noise Band from the Woods
+			</h1>
 			{
 				homeData.map((item) => (
 					<Card
@@ -45,6 +48,18 @@ const haiku = [
 </Layout>
 
 <style>
+	.sr-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
+	}
+
 	.home-layout {
 		display: grid;
 		grid-template-columns: minmax(0, 800px) auto;

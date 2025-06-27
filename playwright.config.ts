@@ -20,11 +20,11 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: 'http://localhost:4321',
+    baseURL: process.env.TEST_BASE_URL || 'http://localhost:4321',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    
+
     /* Take screenshot on failure */
     screenshot: 'only-on-failure',
   },
@@ -33,17 +33,20 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        hasTouch: true  // Enable touch support for mobile tests
+      },
     },
   ],
 
   /* Run your local dev server before starting the tests */
-  webServer: {
+  webServer: process.env.TEST_BASE_URL ? undefined : {
     command: 'npm run preview',
     url: 'http://localhost:4321',
     reuseExistingServer: false,
     timeout: 120 * 1000,
     stdout: 'ignore',
-    stderr: 'inherit',
+    stderr: 'pipe',
   },
 });

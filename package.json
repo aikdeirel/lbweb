@@ -16,7 +16,14 @@
     "astro": "astro",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
-    "test:install": "playwright install",
+    "test:e2e:docker": "TEST_BASE_URL=http://localhost:4321 playwright test",
+    "test:content": "playwright test content-validation",
+    "test:accessibility": "playwright test accessibility",
+    "test:seo": "playwright test seo-metadata",
+    "test:errors": "playwright test error-handling",
+    "test:mobile": "playwright test mobile-responsive",
+    "test:install": "playwright install chromium",
+    "test:install:all": "playwright install",
     "test:server": "node scripts/test-server.js"
   },
   "dependencies": {
