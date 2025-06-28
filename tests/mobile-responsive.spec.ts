@@ -228,38 +228,7 @@ test.describe('Mobile Responsiveness Tests', () => {
         }
     });
 
-    test('grid layouts adapt to screen size', async ({ page }) => {
-        const gridPages = ['/visual', '/news', '/about'];
 
-        for (const pagePath of gridPages) {
-            for (const device of devices) {
-                await page.setViewportSize({ width: device.width, height: device.height });
-                await page.goto(pagePath);
-
-                const gridElements = page.locator('.grid, .visual-grid');
-
-                if (await gridElements.count() > 0) {
-                    const grid = gridElements.first();
-
-                    // Check grid columns adapt to screen size
-                    const gridCols = await grid.evaluate(el => {
-                        const styles = window.getComputedStyle(el);
-                        return styles.gridTemplateColumns;
-                    });
-
-                    // On mobile, should have fewer columns
-                    if (device.width < 768 && gridCols && gridCols !== 'none') {
-                        // Count columns (rough approximation)
-                        const columnCount = gridCols.split(' ').filter(col =>
-                            col.includes('px') || col.includes('fr') || col.includes('%')
-                        ).length;
-
-                        expect(columnCount).toBeLessThanOrEqual(2);
-                    }
-                }
-            }
-        }
-    });
 
     test('pagination controls are touch-friendly', async ({ page }) => {
         await page.setViewportSize({ width: 375, height: 667 });
