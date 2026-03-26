@@ -27,7 +27,7 @@
     "test:server": "node scripts/test-server.js"
   },
   "dependencies": {
-    "@astrojs/node": "^9.5.4",
+    "@astrojs/node": "^10.0.0",
     "astro": "^5.18.1"
   },
   "devDependencies": {
