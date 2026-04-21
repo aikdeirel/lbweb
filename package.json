@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@astrojs/node": "^10.0.0",
-    "astro": "^5.18.1"
+    "astro": "^6.1.8"
   },
   "devDependencies": {
     "@playwright/test": "^1.57.0",
