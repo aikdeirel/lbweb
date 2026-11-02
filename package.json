@@ -27,11 +27,11 @@
     "test:server": "node scripts/test-server.js"
   },
   "dependencies": {
-    "@astrojs/node": "^11.1.8",
-    "astro": "^7.4.0"
+    "@astrojs/node": "^11.1.9",
+    "astro": "^7.4.4"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.1",
-    "@types/node": "^26.6.5"
+    "@types/node": "^26.6.6"
   }
 }
